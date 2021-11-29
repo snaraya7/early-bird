@@ -1,0 +1,990 @@
+commit_hash,author_name,author_date_unix_timestamp,author_email,author_date,commit_message,fix,classification,linked,contains_bug,fixes,ns,nd,nf,entropy,la,ld,fileschanged,lt,ndev,age,nuc,exp,rexp,sexp,glm_probability,rf_probability,repository_id,issue_id,issue_date,issue_type
+120b02b4fb2540d2e5aaf513a94880670840f178,Jenkins Build Slave User,1465849289,jenkins-build@jenkins.ceph.com,Mon Jun 13 20:21:29 2016 +0000,1.2.7 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",48.5,7.0,4.315787037037037,1.0,2.0,1.0909090909090908,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0d041c9629cdc13fc260e2ac901f350417ac6353,Alfredo Deza,1465849288,alfredo@deza.pe,Mon Jun 13 16:21:28 2016 -0400,Merge pull request #45 from ceph/release-1.2.7 Release 1.2.7,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+32d8f04fd402f3807c57c8e4bec8be033aa56776,Alfredo Deza,1465848980,adeza@redhat.com,Mon Jun 13 16:16:20 2016 -0400,"bump to 1.2.7 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+
+Resolves: release#1.2.7
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/__init__.py,CAS_DELIMITER",5.0,2.0,4.325787037037037,1.0,195.0,7.052939871376387,169.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+558e99e8813a16821309976121995644bd07c612,Alfredo Deza,1465848966,adeza@redhat.com,Mon Jun 13 16:16:06 2016 -0400,"update the changelog Signed-off-by: Alfredo Deza <adeza@redhat.com>
+
+Resolves: release#1.2.7
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,7.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",58.0,1.0,4.324733796296297,1.0,194.0,6.053120051556568,23.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1cf4a8acd7df8409993cb151278c9dd13eda9bae,Alfredo Deza,1465841296,alfredo@deza.pe,Mon Jun 13 14:08:16 2016 -0400,Merge pull request #44 from ceph/wip-copy-if-newer add rgwx-copy-if-newer param to sync_object_intra_region,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+475aec21b962b354d98b3b10966a5f6edfe53f00,Casey Bodley,1465499717,cbodley@redhat.com,Thu Jun 9 15:15:17 2016 -0400,"DataWorker.sync_object does not fail on NotModified Signed-off-by: Casey Bodley <cbodley@redhat.com>
+",True,Corrective,True,False,,1.0,2.0,2.0,0.9709505944546686,13.0,2.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",387.5,5.0,15.022158564814815,2.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e0f84dec09ee9fb52f1c603b9e132fa95afabc98,Casey Bodley,1465499490,cbodley@redhat.com,Thu Jun 9 15:11:30 2016 -0400,"add rgwx-copy-if-newer param to sync_object_intra_region Signed-off-by: Casey Bodley <cbodley@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",702.0,5.0,0.01269675925925926,1.0,2.0,1.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+dec067cf75732a818fc56097825cd0fcbefc95a6,Casey Bodley,1465498393,cbodley@redhat.com,Thu Jun 9 14:53:13 2016 -0400,"add exception for 304 NotModified Signed-off-by: Casey Bodley <cbodley@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,0.7219280948873623,5.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/exceptions.py,CAS_DELIMITER",389.0,4.0,408.5624826388889,2.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5e8c7ea36a7858f114a7f73a7ca9a71c390c4283,Jenkins Build Slave User,1465476405,jenkins-build@jenkins.ceph.com,Thu Jun 9 12:46:45 2016 +0000,1.2.6 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",45.5,7.0,70.57944444444445,1.0,1.0,0.09090909090909091,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b5d56f7256e231d2bacb28a16ec366495c64046d,Alfredo Deza,1465475533,alfredo@deza.pe,Thu Jun 9 08:32:13 2016 -0400,Merge pull request #43 from ceph/release-1.2.6 get ready to release 1.2.6,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a94f435b760d5c6a55d35591f60ba412dfaff86f,Alfredo Deza,1465475309,adeza@redhat.com,Thu Jun 9 08:28:29 2016 -0400,"update the changelog Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",52.0,1.0,70.66765046296297,1.0,193.0,5.076671691757238,22.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+045b8890811b5f5fdc4150ae3d81882f84c2881a,Alfredo Deza,1465475232,adeza@redhat.com,Thu Jun 9 08:27:12 2016 -0400,"bump to 1.2.6 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,True,"[""32d8f04fd402f3807c57c8e4bec8be033aa56776""]",1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/__init__.py,CAS_DELIMITER",5.0,2.0,70.66858796296296,1.0,192.0,4.076671691757238,168.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+40dfa077fc56b1556efa210fdd0defa01e0da627,Alfredo Deza,1464204811,alfredo@deza.pe,Wed May 25 15:33:31 2016 -0400,Merge pull request #42 from ceph/rhbz-1336532 prevent looking at state if there is none in the response,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+633239a9aab46599d667dcc2ebde8414d88c5ad3,Alfredo Deza,1464202511,adeza@redhat.com,Wed May 25 14:55:11 2016 -0400,"improve the logging saying the op state will be tried again Signed-off-by: Alfredo Deza <adeza@redhat.com>
+
+Resolves: rhbz#1336532
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",560.0,5.0,0.02290509259259259,1.0,191.0,5.264847766336773,167.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+beec71f2d23a29322d1c5d7e6d4802004d72d050,Alfredo Deza,1464201094,adeza@redhat.com,Wed May 25 14:31:34 2016 -0400,"add a test that verifies we don't break when state is [] Signed-off-by: Alfredo Deza <adeza@redhat.com>
+
+Resolves: rhbz#1336532
+",True,Corrective,True,True,"[""475aec21b962b354d98b3b10966a5f6edfe53f00""]",1.0,1.0,1.0,0.0,8.0,1.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",207.0,2.0,287.0647222222222,1.0,190.0,4.264847766336773,166.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c7b38add44209385b67fa0dcb0a47eb609657cfe,Alfredo Deza,1464200532,adeza@redhat.com,Wed May 25 14:22:12 2016 -0400,"if there is no state to look at continue until we get something Signed-off-by: Alfredo Deza <adeza@redhat.com>
+
+Resolves: rhbz#1336532
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,3.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",557.0,5.0,420.1862962962963,1.0,189.0,3.2648477663367728,165.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+764ad6deafd9b3971f328330368e61a2da5722cf,Jenkins Build Slave User,1459378341,jenkins-build@jenkins.ceph.com,Wed Mar 30 22:52:21 2016 +0000,1.2.5 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",42.5,6.0,122.75624421296295,2.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4203c1eb4b012380d8f4f70e5d15e280bfb2a2f5,Alfredo Deza,1459370547,alfredo@deza.pe,Wed Mar 30 16:42:27 2016 -0400,Merge pull request #41 from ceph/release-1.2.5 Release 1.2.5,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+15b23ed870d36c8f871ae4d8a3ae5b5818b693af,Alfredo Deza,1459369624,adeza@redhat.com,Wed Mar 30 16:27:04 2016 -0400,"[RM-15328] update the changelog for 1.2.5 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,7.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",45.0,1.0,231.03733796296297,1.0,188.0,4.906871663677583,21.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+df55f785e56baa12c8c3c4137eb6656f833a9a89,Alfredo Deza,1459369466,adeza@redhat.com,Wed Mar 30 16:24:26 2016 -0400,"[RM-15328] bump to 1.2.5 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/__init__.py,CAS_DELIMITER",5.0,2.0,231.029375,1.0,187.0,3.906871663677583,164.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+56edf2eaff0b856ea1c81d7dcac5400124c36b79,Yehuda Sadeh,1458755121,yehuda@redhat.com,Wed Mar 23 10:45:21 2016 -0700,"Merge pull request #40 from ceph/RM-13377 update the minimum boto version required
+
+Reviewed-by: Yehuda Sadeh <yehuda@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+446b1477e53d539a34f17ad277ed55bb3dc673b8,Alfredo Deza,1458135621,adeza@redhat.com,Wed Mar 16 09:40:21 2016 -0400,"[RM-13377] require boto 2.10.0 as the minimum version in the spec file Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",44.0,5.0,216.74582175925926,1.0,186.0,4.377572794979463,20.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+babba2e3270a061a0ea1d767a6d4d8eef07564ba,Alfredo Deza,1458135596,adeza@redhat.com,Wed Mar 16 09:39:56 2016 -0400,"[RM-13377] require boto 2.10.0 as the minimum version Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"setup.py,CAS_DELIMITER",43.0,4.0,218.8272800925926,1.0,185.0,3.3775727949794634,19.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3762360fc20ec65009916d44402ea12b719b35fc,Alfredo Deza,1439473087,alfredo@deza.pe,Thu Aug 13 09:38:07 2015 -0400,Merge pull request #34 from david-z/wip-init-radosgw-agent Fix conf not found error when using init script to restart radosgw-agent,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c58fc4fb4c59864c155ac9f41fbc7c58e7db51a6,Jenkins,1439408782,jenkins@inktank.com,Wed Aug 12 12:46:22 2015 -0700,1.2.4 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",39.5,6.0,28.15150462962963,1.0,3.0,0.29953703703703705,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e354ff80539d580a313cc29a95b72bf624fc05f5,Alfredo Deza,1439408710,alfredo@deza.pe,Wed Aug 12 15:45:10 2015 -0400,Merge pull request #37 from ceph/RM-12680 release 1.2.4,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e41df45156f9712513c6b4de009e064d7c9ea768,Alfredo Deza,1439408528,adeza@redhat.com,Wed Aug 12 15:42:08 2015 -0400,"[RM-12680] bump the version to 1.2.4 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/__init__.py,CAS_DELIMITER",5.0,2.0,28.151493055555555,1.0,184.0,14.657014065656421,163.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+262b3964340fe445cb2d8727ee893d01c0646674,Alfredo Deza,1439407998,adeza@redhat.com,Wed Aug 12 15:33:18 2015 -0400,"[RM-12680] update the changelog Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",39.0,1.0,28.145636574074075,1.0,183.0,13.658438567080921,18.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5d0d60b937c3839d23622e38476b91744aefbb71,Alfredo Deza,1439402388,alfredo@deza.pe,Wed Aug 12 13:59:48 2015 -0400,Merge pull request #36 from ceph/RM-12677 fix invalid references to `HttpError`,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a81ac6938ebb83f179b2bab99a3571c1c29dd87d,Alfredo Deza,1439398727,adeza@redhat.com,Wed Aug 12 12:58:47 2015 -0400,"[RM-12677] reference HttpError from the right location: exc module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,2.0,"radosgw_agent/lock.py,CAS_DELIMITER",113.0,2.0,134.98994212962964,1.0,182.0,12.66298260691908,162.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d628b6bd9d6c492a7db5079f363d9282e32eeeef,Alfredo Deza,1439398702,adeza@redhat.com,Wed Aug 12 12:58:22 2015 -0400,"[RM-12677] remove references to invalid client exception paths Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,3.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",209.0,2.0,188.09162037037038,1.0,181.0,11.66298260691908,161.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fc3985a332e6220be76993e2e4c12f2e93d157af,Alfredo Deza,1439230351,alfredo@deza.pe,Mon Aug 10 14:12:31 2015 -0400,Merge pull request #35 from ceph/RM-12470 fix pinning of mock,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7c5c6dea7024deab647d6023aa310031e6e0cd62,Alfredo Deza,1439228978,adeza@redhat.com,Mon Aug 10 13:49:38 2015 -0400,"[RM-12470] do not install from requirements in the awesome bootstrap script Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"bootstrap,CAS_DELIMITER",42.0,1.0,684.6971759259259,1.0,180.0,10.845429424330945,17.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0194b00d52ab335079faa894a167ade050a2f978,Alfredo Deza,1439228940,adeza@redhat.com,Mon Aug 10 13:49:00 2015 -0400,"[RM-12470] remove no longer used requirements files Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,1.0,0.0,6.0,"requirements-dev.txt,CAS_DELIMITER,requirements.txt,CAS_DELIMITER",3.0,4.0,457.0692650462963,2.0,179.0,9.845429424330945,16.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+dc5b009bd9cd3186056727a08b39b19c5f5595df,Alfredo Deza,1439228919,adeza@redhat.com,Mon Aug 10 13:48:39 2015 -0400,"[RM-12470] how about using the defined install_requires Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,7.0,7.0,"setup.py,CAS_DELIMITER",43.0,4.0,0.009571759259259259,1.0,178.0,8.845429424330945,15.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+beb6e1af7a033ec3ccd0c10d1f9e02717467f3c7,Alfredo Deza,1439228092,adeza@redhat.com,Mon Aug 10 13:34:52 2015 -0400,"[RM-12470] test_requires does not need to be slapped onto normal requirements Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,6.0,7.0,"setup.py,CAS_DELIMITER",44.0,4.0,140.13752314814815,1.0,177.0,7.845429424330945,14.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+24e9e7716b20c1fcccc547a380e132df9e2c8851,Zhi Zhang,1438246895,zhangz.david@outlook.com,Thu Jul 30 17:01:35 2015 +0800,"Fix conf not found error when using init script to restart radosgw-agent Init script wrongly passed conf file name recursively in restarting case, so conf file not found after re-entry init script. It should pass initial conf file path.
+
+Signed-off-by: Zhi Zhang zhangz.david@outlook.com
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,2.0,2.0,"init-radosgw-agent,CAS_DELIMITER",102.0,1.0,497.9512152777778,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+878de6e1e6ea4d5a4eb674e45f92a2f71cb91d2c,Jenkins,1436976492,jenkins@inktank.com,Wed Jul 15 09:08:12 2015 -0700,1.2.3 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",36.5,6.0,78.83893518518518,1.0,2.0,0.12681159420289856,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3b0fc514957acfe75455f0ea4a05b15879ce0acc,Alfredo Deza,1436976239,adeza@redhat.com,Wed Jul 15 12:03:59 2015 -0400,"bump the version Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/__init__.py,CAS_DELIMITER",5.0,2.0,78.98920138888889,1.0,176.0,10.454603719568047,160.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b56b5a465a0feab97bfeb116d2150188d46f8499,Alfredo Deza,1436976215,adeza@redhat.com,Wed Jul 15 12:03:35 2015 -0400,"update the changelog Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,8.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",31.0,1.0,78.98087962962963,1.0,175.0,9.454603719568047,13.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1afb6e0174c9e0f9d9c7fca6e5f2b8c7228ce688,Alfredo Deza,1436188488,alfredo@deza.pe,Mon Jul 6 09:14:48 2015 -0400,"Merge pull request #31 from ceph/12030 IPV6 support 
+
+Reviewed-by: Yehuda Sadeh <yehuda@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c1dd6a387abc8b8313aa1243ac21c5701bece607,Alfredo Deza,1434743817,adeza@redhat.com,Fri Jun 19 15:56:57 2015 -0400,"set an env variable that tells us we are testing Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,7.0,2.0,"radosgw_agent/tests/conftest.py,CAS_DELIMITER",33.0,1.0,211.9920486111111,1.0,174.0,15.993078996373907,159.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+10bf1f728572681564ce2a768f465f6d15d8404d,Alfredo Deza,1434743791,adeza@redhat.com,Fri Jun 19 15:56:31 2015 -0400,"add py27 for testing in tox Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"tox.ini,CAS_DELIMITER",9.0,2.0,198.97667824074074,1.0,173.0,14.993078996373907,12.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ac30464554566408016b595d618e38cbfc6c8017,Alfredo Deza,1434743740,adeza@redhat.com,Fri Jun 19 15:55:40 2015 -0400,"python 2.6 gives us different url/port parsing responses Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,34.0,7.0,"radosgw_agent/client.py,CAS_DELIMITER",674.0,4.0,0.13710648148148147,1.0,172.0,13.993078996373907,158.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+cb6ea33e5875eed48e5cebb03935d58eea9d4174,Alfredo Deza,1434731976,adeza@redhat.com,Fri Jun 19 12:39:36 2015 -0400,"tests for the new network utility Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,48.0,0.0,"radosgw_agent/tests/util/test_network.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,171.0,13.009987088282,157.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6064f3897699903b85a469a9ee77e44116f7df4c,Alfredo Deza,1434731956,adeza@redhat.com,Fri Jun 19 12:39:16 2015 -0400,"add a network utility to check for ipv6 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,20.0,0.0,"radosgw_agent/util/network.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,170.0,12.009987088282,156.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c2a2e64d0aa633d8a0b0ea8f4d1fcd6baf9c0837,Alfredo Deza,1434731938,adeza@redhat.com,Fri Jun 19 12:38:58 2015 -0400,"add more tests for client that involve ipv6 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",672.0,2.0,147.80475694444445,1.0,169.0,11.009987088282,155.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e0d162f605f2faef194c8dc3626f512eb98fd106,Alfredo Deza,1434731894,adeza@redhat.com,Fri Jun 19 12:38:14 2015 -0400,"properly detect ipv6 in client.py Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,40.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",636.0,4.0,1.0923032407407407,1.0,168.0,10.009987088282,154.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3ac3a9945a3f85ea003cef12b96021c3025fd0f6,Alfredo Deza,1434637519,adeza@redhat.com,Thu Jun 18 10:25:19 2015 -0400,"use netloc instead of hostname Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",636.0,4.0,79.90828703703704,1.0,167.0,9.17573461211956,153.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a41ed654127f7159e2fb484f4ba42edfc18aad0d,Alfredo Deza,1432740449,alfredo@deza.pe,Wed May 27 11:27:29 2015 -0400,"Merge pull request #29 from Ved-vampir/master radosgw-agent: supress override of config settings by argparse defaults
+
+Reviewed-by: Alfredo Deza <adeza@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+11d1f22439d482b2312bb5e3cf5848c6d5a3b774,Jenkins,1430164808,jenkins@inktank.com,Mon Apr 27 13:00:08 2015 -0700,1.2.2 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",33.5,6.0,76.96344907407408,1.0,1.0,0.09090909090909091,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9595701a33e61a6a48cddb44dd50e7f9250d6ef6,Yehuda Sadeh,1430154959,yehuda@redhat.com,Mon Apr 27 10:15:59 2015 -0700,"Merge pull request #30 from ceph/release-1.2.2 Release 1.2.2
+
+Reviewed-by: Yehuda Sadeh <yehuda@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+74227a797f4e666585d512d3bc5d4fabefd3251e,Alfredo Deza,1430152267,adeza@redhat.com,Mon Apr 27 12:31:07 2015 -0400,"update the changelog Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,13.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",18.0,1.0,76.83244212962963,1.0,166.0,17.839052124410046,11.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+706d849f0e9d45a0c3511de1acc64f96bc14aa5d,Alfredo Deza,1430151572,adeza@redhat.com,Mon Apr 27 12:19:32 2015 -0400,"bump the version of the agent to 1.2.2 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/__init__.py,CAS_DELIMITER",5.0,2.0,35.0858912037037,1.0,165.0,16.839052124410046,152.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7a8012da2de20fe2c54cfd6016199620fc159dd8,Ved-vampir,1429100325,akiselyova@mirantis.com,Wed Apr 15 15:18:45 2015 +0300,"radosgw-agent: supress override of config settings by argparse defaults Fixes #11365 Sign-off-by: Alyona Kiseleva <akiselyova@mirantis.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",481.0,5.0,22.89320601851852,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a6aa07a5d301ecaa2b4f8db4777fd47af239ee78,Alfredo Deza,1427896436,adeza@redhat.com,Wed Apr 1 09:53:56 2015 -0400,"manually bisecting check for old way of bucket_instance from agent worker: use current bucket instance, if plain bucket name passed
+from: 52c409a782d46ab2f21135de05e2af00656dcf2c
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+
+Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",553.0,5.0,1.8630092592592593,1.0,164.0,39.25636053145338,151.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+847a1cf39b2268c21e650db3010a70d0c3a0ec55,Josh Durgin,1427747353,jdurgin@redhat.com,Mon Mar 30 13:29:13 2015 -0700,"Merge pull request #28 from ceph/wip-10852 better logging for users
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7d0c6db93b61208a1f8b263def175b4263441b3a,Alfredo Deza,1427735596,adeza@redhat.com,Mon Mar 30 13:13:16 2015 -0400,"use dev_log for locking and unlocking of shards Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,10.0,4.0,"radosgw_agent/lock.py,CAS_DELIMITER",107.0,1.0,373.7708680555556,1.0,163.0,40.21982735358894,150.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0a0ccb9c73cac075fadb4b47eadb244a23f35c96,Alfredo Deza,1427735472,adeza@redhat.com,Mon Mar 30 13:11:12 2015 -0400,"only report bucket to retry if there are some Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",551.0,5.0,0.13408564814814813,1.0,162.0,39.21982735358894,149.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+781f990b873ca878873ce0572a73a545c2d8da99,Alfredo Deza,1427733443,adeza@redhat.com,Mon Mar 30 12:37:23 2015 -0400,"worker bound operations should also go to dev_log Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,3.0,"radosgw_agent/client.py,CAS_DELIMITER",634.0,4.0,4.891481481481481,1.0,161.0,38.258211191972784,148.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c47d7daab0160682ae9532abb170378e108029ea,Alfredo Deza,1427733272,adeza@redhat.com,Mon Mar 30 12:34:32 2015 -0400,"swap log statements to go to dev_log Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,3.0,"radosgw_agent/sync.py,CAS_DELIMITER",328.0,6.0,4.047418981481481,1.0,160.0,37.258211191972784,147.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+aed6d959383a472a91ebda7e149e853274120865,Alfredo Deza,1427723887,adeza@redhat.com,Mon Mar 30 09:58:07 2015 -0400,"remove double 'syncing object' lines Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,6.0,6.0,"radosgw_agent/worker.py,CAS_DELIMITER",551.0,5.0,0.041666666666666664,1.0,159.0,38.31326169702329,146.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+01bfdc0484509fa7d1471245f921c18db920864a,Alfredo Deza,1427720287,adeza@redhat.com,Mon Mar 30 08:58:07 2015 -0400,use the new dev_logger for some shard sync items ,False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,3.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",550.0,5.0,0.004837962962962963,1.0,158.0,37.31344187720347,145.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+550f11cd098dbab67f01c80264949bbcbab1fe0b,Alfredo Deza,1427719869,adeza@redhat.com,Mon Mar 30 08:51:09 2015 -0400,use obj.name for logging objects that are not found in master ,False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",550.0,5.0,2.7582291666666667,1.0,157.0,36.313802237563834,144.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+839972f52d46fae6e082a5c92f9d7879994bcb0b,Alfredo Deza,1427481558,adeza@redhat.com,Fri Mar 27 14:39:18 2015 -0400,"remove len() for generator object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,6.0,"radosgw_agent/worker.py,CAS_DELIMITER",553.0,5.0,0.10600694444444445,1.0,156.0,35.37769112645272,143.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+bfb1127cae029d77c1bc4e7c7f544fa681209063,Alfredo Deza,1427472399,adeza@redhat.com,Fri Mar 27 12:06:39 2015 -0400,"full sync of a bucket with better logging Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Perfective,False,False,,1.0,1.0,1.0,0.0,11.0,7.0,"radosgw_agent/worker.py,CAS_DELIMITER",549.0,5.0,9.931805555555556,1.0,155.0,35.051933550695146,142.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6f7ba3e773b9e3cd9af20c0504c763f1654311e4,Orit Wasserman,1427459055,orit.was@gmail.com,Fri Mar 27 13:24:15 2015 +0100,Merge pull request #27 from ceph/wip-11246 correctly import InvalidProtocol from its right location,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+90a7e0c7d9150eb18e35837ff54902b508ac4bcd,Orit Wasserman,1427459032,orit.was@gmail.com,Fri Mar 27 13:23:52 2015 +0100,Merge pull request #26 from ceph/wip-11245 configure logging before parsing arguments,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+33df9b77b153ed9278374e6e8381e5ba7e718d0d,Alfredo Deza,1427399663,adeza@redhat.com,Thu Mar 26 15:54:23 2015 -0400,"correctly import InvalidProtocol from its right location Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/cli.py,CAS_DELIMITER",435.0,5.0,13.154583333333333,1.0,145.0,25.995981169742766,134.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3b95635b50ef30e33f9acb1d2575f9ce490fd852,Alfredo Deza,1427396517,adeza@redhat.com,Thu Mar 26 15:01:57 2015 -0400,"configure logging before parsing arguments Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,14.0,6.0,"radosgw_agent/cli.py,CAS_DELIMITER",435.0,5.0,13.118171296296296,1.0,144.0,25.22058434434594,133.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+65121e7093fbba610496f618e942516fa4557777,Alfredo Deza,1427383575,adeza@redhat.com,Thu Mar 26 11:26:15 2015 -0400,"inform the user about data sync operations Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,0.0,"radosgw_agent/sync.py,CAS_DELIMITER",326.0,6.0,64.84506944444445,1.0,154.0,33.37280189803408,141.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c5e8b2428a8c80c25b0f35d6ec79536d9d5f41b9,Alfredo Deza,1427380038,adeza@redhat.com,Thu Mar 26 10:27:18 2015 -0400,"ignore log files Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,".gitignore,CAS_DELIMITER",35.0,1.0,625.9137847222222,1.0,153.0,32.89065904089122,10.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fedd3de34337ed47092d0c9e3e4a15a2b94a6fca,Alfredo Deza,1427314508,adeza@redhat.com,Wed Mar 25 16:15:08 2015 -0400,"import the new utility in __init__ so it is nicer to user Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"radosgw_agent/util/__init__.py,CAS_DELIMITER",1.0,1.0,20.010925925925925,1.0,152.0,32.154106094353764,140.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2b6dde122e4e1d76baadc0612b96a0e034bc264b,Alfredo Deza,1427314465,adeza@redhat.com,Wed Mar 25 16:14:25 2015 -0400,"create a small utility to handle dev logging loggers Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,20.0,0.0,"radosgw_agent/util/log.py,CAS_DELIMITER",69.0,1.0,21.18429398148148,1.0,151.0,31.15410609435376,139.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ee0347c85c26c0890e73e03b05f0dee3264d48f6,Alfredo Deza,1427310819,adeza@redhat.com,Wed Mar 25 15:13:39 2015 -0400,"remove GET URL annoying log statement Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",633.0,4.0,12.124074074074073,1.0,150.0,30.236040096024603,138.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ad0a6fe2931ebd440a99edc18d0345f4bee5a1e3,Alfredo Deza,1427122376,adeza@redhat.com,Mon Mar 23 10:52:56 2015 -0400,"the __str__ method of configuration should be a string Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",77.0,1.0,11.009398148148149,1.0,149.0,35.79977574977573,137.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+722f256384fcdd19c1c57790e68cf351ef3054f8,Alfredo Deza,1427122352,adeza@redhat.com,Mon Mar 23 10:52:32 2015 -0400,"log all the initial settings as a header Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,39.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",443.0,5.0,1.1574074074074073e-05,1.0,148.0,34.79977574977573,136.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fc11bd25e237bf6e48ff6250c93cbca1fca9b9b8,Alfredo Deza,1427120210,adeza@redhat.com,Mon Mar 23 10:16:50 2015 -0400,"make setup.py read __init__ to set the version Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,7.0,2.0,"setup.py,CAS_DELIMITER",39.0,4.0,41.73993055555555,1.0,147.0,33.81763289263288,9.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7b807f63d650415f6e4b369d0365e49a65dd31b7,Alfredo Deza,1427120151,adeza@redhat.com,Mon Mar 23 10:15:51 2015 -0400,"set the version in the actual package Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,0.0,"radosgw_agent/__init__.py,CAS_DELIMITER",3.0,2.0,10.982534722222223,1.0,146.0,32.81763289263288,135.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b65d86f1d67287f92da2601f2da4fac965a00a2b,Josh Durgin,1426648088,jdurgin@redhat.com,Tue Mar 17 20:08:08 2015 -0700,"Merge pull request #22 from ceph/wip-10453 Wip 10453
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e4b246184545d5d76ff348245bb71ac3a7326497,Alfredo Deza,1426614291,adeza@redhat.com,Tue Mar 17 13:44:51 2015 -0400,"when getting the worker bounds map the retries to objects Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",548.0,5.0,0.08771990740740741,1.0,143.0,44.14272628615901,132.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+80836e676ab0edb6d41e76abb837c2e82606b444,Alfredo Deza,1426614189,adeza@redhat.com,Tue Mar 17 13:43:09 2015 -0400,"rename the helper to to_obj Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Perfective,False,False,,1.0,2.0,2.0,1.0,2.0,2.0,"radosgw_agent/tests/util/test_obj.py,CAS_DELIMITER,radosgw_agent/util/obj.py,CAS_DELIMITER",41.0,1.0,0.0035706018518518517,2.0,142.0,43.14272628615901,131.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6ce2b4f9a8bcc4a26a066391fe52c6708da819a1,Alfredo Deza,1426613889,adeza@redhat.com,Tue Mar 17 13:38:09 2015 -0400,"tests for the new keys to attrs helper Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,8.0,0.0,"radosgw_agent/tests/util/test_obj.py,CAS_DELIMITER",32.0,1.0,0.10759259259259259,1.0,141.0,42.14272628615901,130.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4add3915b0c32439a48e1ad7cb8417c06d7a4fd2,Alfredo Deza,1426613872,adeza@redhat.com,Tue Mar 17 13:37:52 2015 -0400,"create a helper to get keys to attributes in an object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,20.0,0.0,"radosgw_agent/util/obj.py,CAS_DELIMITER",22.0,1.0,0.10755787037037037,1.0,140.0,41.14272628615901,129.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3290c2de9dbcdbbadf0452a310f0b8952d85faac,Alfredo Deza,1426606712,adeza@redhat.com,Tue Mar 17 11:38:32 2015 -0400,"make it explicit that obj refers to the utility Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",548.0,5.0,0.024224537037037037,1.0,139.0,40.17447231790504,128.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+54490be07977d1516a41ca637252e9f7c799ef95,Alfredo Deza,1426604619,adeza@redhat.com,Tue Mar 17 11:03:39 2015 -0400,"use the new utility to slap extra metadata to retries Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,5.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",545.0,5.0,33.795138888888886,1.0,138.0,39.17447231790504,127.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1379cb4d4f893453a132777d442960a221ca3359,Alfredo Deza,1426604593,adeza@redhat.com,Tue Mar 17 11:03:13 2015 -0400,"add tests for the new utility Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,32.0,0.0,"radosgw_agent/tests/util/test_obj.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,137.0,38.17447231790504,126.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1b26b9799b15366ecce18dc66fd3fec6933d6e00,Alfredo Deza,1426604579,adeza@redhat.com,Tue Mar 17 11:02:59 2015 -0400,"create an obj util that can convert objects to_dict Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,22.0,0.0,"radosgw_agent/util/obj.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,136.0,37.17447231790504,125.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+36bbb0327da68396750d796c15ba37c9cace5713,Alfredo Deza,1426263299,adeza@redhat.com,Fri Mar 13 12:14:59 2015 -0400,"make the list_object_in_bucket use the config for versioned support Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",630.0,4.0,0.002002314814814815,1.0,135.0,38.65172376642966,124.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+57e71f73cf2ead13160707e78d19029f836b1a2f,Alfredo Deza,1426263126,adeza@redhat.com,Fri Mar 13 12:12:06 2015 -0400,"inform the user what request is hapenning Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",629.0,4.0,31.820219907407406,1.0,134.0,37.65172376642966,123.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+de762c7b6fb6b374db94cdca8c4ec3c0d4cb1d91,Alfredo Deza,1426263107,adeza@redhat.com,Fri Mar 13 12:11:47 2015 -0400,"save the versioned support in the config object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,8.0,6.0,"radosgw_agent/cli.py,CAS_DELIMITER",433.0,5.0,0.8226851851851852,1.0,133.0,36.662834877540774,122.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a5b28834bb5e52857720139a1fbe6dfd1d1ea266,Alfredo Deza,1426192049,adeza@redhat.com,Thu Mar 12 16:27:29 2015 -0400,"create a new string helper that concatenates arguments Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,14.0,0.0,"radosgw_agent/util/string.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,132.0,37.312560152266045,121.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+87ac4b1750dea645a3ffc957eb46154d68a1a591,Alfredo Deza,1426192027,adeza@redhat.com,Thu Mar 12 16:27:07 2015 -0400,"extract the string signing to a helper function Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,24.0,11.0,"radosgw_agent/cli.py,CAS_DELIMITER",420.0,5.0,0.044050925925925924,1.0,131.0,36.312560152266045,120.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fa6540f2cc61ecb2652e2784bf24a637ce4508bf,Alfredo Deza,1426188221,adeza@redhat.com,Thu Mar 12 15:23:41 2015 -0400,"specifically look for 403 to detect version support, log everything else Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,19.0,7.0,"radosgw_agent/cli.py,CAS_DELIMITER",408.0,5.0,1.043587962962963,1.0,130.0,36.90111326581916,119.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1d7eb2fdfbc860f9c133adbb9c11989c55e9971d,Alfredo Deza,1426171260,adeza@redhat.com,Thu Mar 12 10:41:00 2015 -0400,"init the config object in __init__ Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,0.0,"radosgw_agent/__init__.py,CAS_DELIMITER",0.0,1.0,611.9695717592592,1.0,129.0,36.23536235006823,118.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0b4a71d35f9d7263e18bd14724beb4dc0d552e9c,Alfredo Deza,1426171191,adeza@redhat.com,Thu Mar 12 10:39:51 2015 -0400,"tests for the new special method addition for config Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,14.0,0.0,"radosgw_agent/tests/util/test_configuration.py,CAS_DELIMITER",50.0,1.0,0.9202314814814815,1.0,128.0,35.23536235006823,117.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f3a7c9779f0915ebbb992e1c440e6115be0d42b9,Alfredo Deza,1426171164,adeza@redhat.com,Thu Mar 12 10:39:24 2015 -0400,"add the containing method for checking existence Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,7.0,0.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",70.0,1.0,0.919675925925926,1.0,127.0,34.23536235006823,116.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0f0ddc2e208509083fc21c93ac316481f61fba77,Alfredo Deza,1426169321,adeza@redhat.com,Thu Mar 12 10:08:41 2015 -0400,"register all the arg values into the config object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,14.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",361.0,5.0,49.95956018518518,1.0,126.0,33.26869568340156,115.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ff5bfd395e4f7c2feae4abfb336086fc8c6ded39,Yehuda Sadeh,1426098055,yehuda@redhat.com,Wed Mar 11 11:20:55 2015 -0700,"radosgw-agent: check if src supports versioning Signed-off-by: Yehuda Sadeh <yehuda@redhat.com>
+(cherry picked from commit 00045e2cd2b5b97439f43f448e07cf2626c20921)
+",False,None,False,False,,1.0,1.0,1.0,0.0,34.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",374.0,5.0,1.1574074074074073e-05,1.0,11.0,0.17066601980395085,9.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fa39cf9bfa47758a91f01da222a7602f9c6040fe,Alfredo Deza,1426091704,adeza@redhat.com,Wed Mar 11 12:35:04 2015 -0400,"allow nested dicts that inherit immutability Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,9.0,3.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",64.0,1.0,0.08243055555555556,1.0,125.0,32.54344070961717,114.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a352a714c710834d08c00b8552cea571dc183423,Alfredo Deza,1426091683,adeza@redhat.com,Wed Mar 11 12:34:43 2015 -0400,"more tests for allowing nested immutable dicts Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,22.0,0.0,"radosgw_agent/tests/util/test_configuration.py,CAS_DELIMITER",28.0,1.0,0.08394675925925926,1.0,124.0,31.543440709617176,113.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+258c508873de434b389d890f7b62378c438db07e,Alfredo Deza,1426084582,adeza@redhat.com,Wed Mar 11 10:36:22 2015 -0400,"update the docstring of the configuration object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Non Functional,False,False,,1.0,1.0,1.0,0.0,7.0,0.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",57.0,1.0,0.0019328703703703704,1.0,123.0,31.6422502334267,112.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c0f22b552f41254467da5bcb8c22cea3a5deb412,Alfredo Deza,1426084430,adeza@redhat.com,Wed Mar 11 10:33:50 2015 -0400,"more tests for the new config dict methods Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,21.0,2.0,"radosgw_agent/tests/util/test_configuration.py,CAS_DELIMITER",9.0,1.0,0.022847222222222224,1.0,122.0,30.6422502334267,111.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ad36942eab2b792f78d1d6f284912d5c08d62249,Alfredo Deza,1426084415,adeza@redhat.com,Wed Mar 11 10:33:35 2015 -0400,"add a few normal dict methods Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,15.0,1.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",43.0,1.0,0.0228125,1.0,121.0,29.6422502334267,110.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7a06de4d9c819ee2f365f547fd6467ab4fe0a137,Alfredo Deza,1426082456,adeza@redhat.com,Wed Mar 11 10:00:56 2015 -0400,"tests for the configuration utility Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,9.0,0.0,"radosgw_agent/tests/util/test_configuration.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,120.0,28.645926704014936,109.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9eb661edb3bd8234f9a85f7849e0230c514636ed,Alfredo Deza,1426082444,adeza@redhat.com,Wed Mar 11 10:00:44 2015 -0400,"contain the dict object instead of inheriting Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,15.0,3.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",31.0,1.0,0.026805555555555555,1.0,119.0,27.645926704014936,108.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+213f1aa797c0bd251aa23729ec4c0552f17cce22,Alfredo Deza,1426080128,adeza@redhat.com,Wed Mar 11 09:22:08 2015 -0400,"an initial take on an immutable config object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,31.0,0.0,"radosgw_agent/util/configuration.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,118.0,26.669736227824462,107.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1fe48e41d08c03bbe097a954c2ce1fff12836112,Josh Durgin,1426014442,jdurgin@redhat.com,Tue Mar 10 12:07:22 2015 -0700,"Merge pull request #25 from ceph/wip-log-location fallback to cwd if log location is unavailable
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+806b6e8e23e9bfadab2f22a5a6638da4da91d641,Alfredo Deza,1426013619,adeza@redhat.com,Tue Mar 10 14:53:39 2015 -0400,"report back to the user when falling back with the log location Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",353.0,5.0,0.1713310185185185,1.0,69.0,18.225688608776846,58.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7dd4a136d8d47b6a37f4c38862bdc2aec437de9c,Josh Durgin,1426002430,jdurgin@redhat.com,Tue Mar 10 08:47:10 2015 -0700,"Merge pull request #24 from ceph/wip-stream-logger set the stream logging before anything else
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+249365a8f828b3c860dfcc81b5d5c3c34b2a4284,Alfredo Deza,1425998816,adeza@redhat.com,Tue Mar 10 10:46:56 2015 -0400,"fallback to cwd if log location is unavailable Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,7.0,2.0,"radosgw_agent/cli.py,CAS_DELIMITER",348.0,5.0,0.8709953703703703,1.0,68.0,17.243545751633988,57.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4f1da6219b19a5ab451666e103196d980223149a,Alfredo Deza,1425923562,adeza@redhat.com,Mon Mar 9 13:52:42 2015 -0400,"set the stream logging before anything else Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,2.0,"radosgw_agent/cli.py,CAS_DELIMITER",347.0,5.0,2.973078703703704,1.0,67.0,16.448704481792717,56.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fdedc4d2caad9f39c58dd605e715bcdec3273bcd,Josh Durgin,1425681703,jdurgin@redhat.com,Fri Mar 6 14:41:43 2015 -0800,"Merge pull request #23 from ceph/wip-10852 initial work for better logging structure
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+050e7525bbc882e494829e3dfdc32435a1f9ffe2,Alfredo Deza,1425666928,adeza@redhat.com,Fri Mar 6 13:35:28 2015 -0500,"use the actual line instead of string replacement Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/util/decorators.py,CAS_DELIMITER",112.0,1.0,0.9417129629629629,1.0,66.0,15.560110663983906,55.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0ef038df0910897cc9af74814056ef836b6bed8f,Alfredo Deza,1425666688,adeza@redhat.com,Fri Mar 6 13:31:28 2015 -0500,"remove extra setLevel call Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",348.0,5.0,0.12381944444444444,1.0,65.0,14.560110663983906,54.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5ddb04358979a12420756e87cc6a2e63412af542,Alfredo Deza,1425655990,adeza@redhat.com,Fri Mar 6 10:33:10 2015 -0500,"just re-raise AgentErrors when getting the region map Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",342.0,5.0,0.028981481481481483,1.0,64.0,13.560110663983906,53.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+60ea42946acb2af8dc40eb4cc6fe09d2be56d0c3,Alfredo Deza,1425653486,adeza@redhat.com,Fri Mar 6 09:51:26 2015 -0500,"use the new logging handlers in cli.py Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,True,"[""33df9b77b153ed9278374e6e8381e5ba7e718d0d""]",1.0,1.0,1.0,0.0,38.0,26.0,"radosgw_agent/cli.py,CAS_DELIMITER",330.0,5.0,91.94693287037038,1.0,63.0,12.560110663983906,52.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a053341558b5f627985cb0861c9c2697605a8cd1,Alfredo Deza,1425653449,adeza@redhat.com,Fri Mar 6 09:50:49 2015 -0500,"create a RegionMapError exception Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,12.0,0.0,"radosgw_agent/exceptions.py,CAS_DELIMITER",65.0,1.0,0.788599537037037,1.0,62.0,11.560110663983906,51.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b74c2c954ebd70e8ec24ece8f83957c104e38530,Alfredo Deza,1425585564,adeza@redhat.com,Thu Mar 5 14:59:24 2015 -0500,"add a decorator utility module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,0.07306611931384561,113.0,0.0,"radosgw_agent/util/__init__.py,CAS_DELIMITER,radosgw_agent/util/decorators.py,CAS_DELIMITER",0.0,1.0,0.5872916666666667,1.0,61.0,10.57526217913542,50.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+edd323b784c36e58e223368457d83fdb4f5ebb00,Alfredo Deza,1425585341,adeza@redhat.com,Thu Mar 5 14:55:41 2015 -0500,"make the client use the new NetworkError exception Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",523.0,4.0,44.031979166666666,1.0,60.0,9.57526217913542,49.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f192732dcf70447d574b25b436f190d27a5cddd4,Alfredo Deza,1425585314,adeza@redhat.com,Thu Mar 5 14:55:14 2015 -0500,"create a new 'AgentError' base exception Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,9.0,2.0,"radosgw_agent/exceptions.py,CAS_DELIMITER",58.0,1.0,45.122905092592596,1.0,59.0,8.57526217913542,48.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+82b870d3e6a8426a031922d6845c04d92f03efc0,Alfredo Deza,1425484142,adeza@redhat.com,Wed Mar 4 10:49:02 2015 -0500,"move the log module into util Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,0.0,"radosgw_agent/util/log.py,CAS_DELIMITER",69.0,1.0,1.1574074074074073e-05,1.0,58.0,7.733670437543679,47.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e92dd9e37c831ed4d082d5abe274da4bc821b748,Alfredo Deza,1425484080,adeza@redhat.com,Wed Mar 4 10:48:00 2015 -0500,"create a utility module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,0.0,0.0,"radosgw_agent/util/__init__.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,57.0,6.733670437543679,46.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+75f7639ecf244dd7ace2ffebf379faa6f9269643,Alfredo Deza,1425413722,adeza@redhat.com,Tue Mar 3 15:15:22 2015 -0500,"create a module with logging utilities Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,69.0,0.0,"radosgw_agent/log.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,56.0,5.759815126188367,45.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+02fd0a34158a8a3b9e8f6cad3ce45ffbdebf440c,Alfredo Deza,1423684719,adeza@redhat.com,Wed Feb 11 14:58:39 2015 -0500,"if an entry is not versioned, don't attempt to filter it Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",541.0,5.0,0.01633101851851852,1.0,117.0,35.38104460898579,106.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fb8214868bd8de0d5f10ba23f831db2a22f8e9f5,Alfredo Deza,1423683308,adeza@redhat.com,Wed Feb 11 14:35:08 2015 -0500,"entry.instance should fallback to 'null' if not present Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",541.0,5.0,6.217604166666667,1.0,116.0,34.38104460898579,105.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fb23a16bb9d0ea4b8ea7cd46d139a0559b6e6945,Jenkins,1423515166,jenkins@inktank.com,Mon Feb 9 12:52:46 2015 -0800,1.2.1 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",30.5,5.0,166.01122685185186,2.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ff956b2cc41e2e28d1542a1868d1bbf31e0b8f94,Alfredo Deza,1423513944,adeza@redhat.com,Mon Feb 9 15:32:24 2015 -0500,"update the changelog Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",13.0,1.0,28.01130787037037,1.0,55.0,10.004374057315236,8.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e301abe18c1be43497bbc60144cff838ba5bb50b,Alfredo Deza,1423513880,adeza@redhat.com,Mon Feb 9 15:31:20 2015 -0500,"bumping to 1.2.1 Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"setup.py,CAS_DELIMITER",39.0,4.0,28.02400462962963,1.0,54.0,9.004374057315236,7.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+dd345f2a56be4ceb26da3e1eb502311bb71a671b,Alfredo Deza,1423513859,adeza@redhat.com,Mon Feb 9 15:30:59 2015 -0500,"fix minor indentation Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",629.0,4.0,4.019525462962963,1.0,115.0,35.271040723981905,104.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e49004f92367b3d7c063119be8cbc85162bf7068,Alfredo Deza,1423166572,adeza@redhat.com,Thu Feb 5 15:02:52 2015 -0500,"if 'versioned' is in obj, just use that before anything Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",624.0,4.0,0.03159722222222222,1.0,114.0,39.79715707178394,103.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3354c8922ee89a1e721ab4c5b180c6c003a9d941,Alfredo Deza,1423163842,adeza@redhat.com,Thu Feb 5 14:17:22 2015 -0500,"safer debug for obj inspection Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,4.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",622.0,4.0,0.0512037037037037,1.0,113.0,39.448347547974414,102.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+37d42ffb89e9e304e3449755f53e3dc6ae14f14c,Alfredo Deza,1423159418,adeza@redhat.com,Thu Feb 5 13:03:38 2015 -0500,"add more debugging infor for versioned objects Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,True,"[""3354c8922ee89a1e721ab4c5b180c6c003a9d941""]",1.0,1.0,1.0,0.0,4.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",618.0,4.0,0.05876157407407408,1.0,112.0,38.4840618336887,101.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+869a0014fe90041a9876012252455b3711ec85b7,Alfredo Deza,1423154341,adeza@redhat.com,Thu Feb 5 11:39:01 2015 -0500,"adding one more log statement when deleting versioned objects Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",617.0,4.0,0.0011689814814814816,1.0,111.0,37.65072850035537,100.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1497772049cf6a58b0c5819e1b94ac19791e6488,Alfredo Deza,1423154240,adeza@redhat.com,Thu Feb 5 11:37:20 2015 -0500,"set the params for versioned operations before using them Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",614.0,4.0,0.0009027777777777777,1.0,110.0,36.65072850035537,99.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+110faa5e6a01a5f4f697abce89ada7e3ab9a101a,Alfredo Deza,1423154162,adeza@redhat.com,Thu Feb 5 11:36:02 2015 -0500,"add a couple of logging statements when detecting a versioned object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,2.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",612.0,4.0,0.0018055555555555555,1.0,109.0,35.65072850035537,98.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a7740bc64361017d3e2b018f299759c3ef4ff997,Alfredo Deza,1423154006,adeza@redhat.com,Thu Feb 5 11:33:26 2015 -0500,"actually try to getattr not just check if it exists, defaulting to None Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",612.0,4.0,0.773449074074074,1.0,108.0,34.65072850035537,97.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5ca8c93fe192773785ac3998ea122a6740a8a4df,Alfredo Deza,1423147586,adeza@redhat.com,Thu Feb 5 09:46:26 2015 -0500,"remove no longer valid tests that ensured proper filtering Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,1.0,17.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",225.0,2.0,2.9975,1.0,107.0,34.3840618336887,96.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c5f0d9b8813455950a55042493650469c5377851,Alfredo Deza,1423146107,adeza@redhat.com,Thu Feb 5 09:21:47 2015 -0500,"move the filtering to the sync method, to avoid issues with the while loop Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",540.0,5.0,0.9512847222222223,1.0,106.0,33.3840618336887,95.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+adca50f2b8c058815a9cce746f31c7b18bdbb388,Alfredo Deza,1423087180,adeza@redhat.com,Wed Feb 4 16:59:40 2015 -0500,"add a fallback for gettatr on delete_marker Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",611.0,4.0,0.11224537037037037,1.0,105.0,32.49993484956171,94.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4663f7863b798fd504296290a972272e6defd582,Alfredo Deza,1423077482,adeza@redhat.com,Wed Feb 4 14:18:02 2015 -0500,"delete_marker might not be present in objects from log Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",611.0,4.0,7.130844907407408,1.0,104.0,32.11324653787341,93.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e45bbab05f541dcaeaa0a6e6e882bb175c70b186,Alfredo Deza,1423063916,adeza@redhat.com,Wed Feb 4 10:31:56 2015 -0500,"add compatible object properties to match a boto object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,9.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",531.0,5.0,0.7656481481481482,1.0,103.0,31.613246537873405,92.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ffd1ca6775e7adc8291c01bab5b78453f5a83177,Alfredo Deza,1422997764,adeza@redhat.com,Tue Feb 3 16:09:24 2015 -0500,"filter after the marker is checked Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",531.0,5.0,1.2136111111111112,1.0,102.0,31.78748896211583,91.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+42bf4c36482796c3bce8463707a9a02941520f27,Alfredo Deza,1422892908,adeza@redhat.com,Mon Feb 2 11:01:48 2015 -0500,"fix entry very to be an object, not a dict - prevents unhashability Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,13.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",519.0,5.0,3.7747337962962964,1.0,101.0,37.0061758308027,90.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e8b5beebec45155e9f9221a8493a839ddaf2a48b,Alfredo Deza,1422888602,adeza@redhat.com,Mon Feb 2 09:50:02 2015 -0500,"test write ops to be ignored as well Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",225.0,2.0,2.7423148148148146,1.0,100.0,36.0061758308027,89.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+69fca113d4db6e8289b7c27525bd7f3f0fadf44e,Alfredo Deza,1422651666,adeza@redhat.com,Fri Jan 30 16:01:06 2015 -0500,"op write also should get ignored Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,9.0,0.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",216.0,2.0,0.00045138888888888887,1.0,99.0,35.006854256854254,88.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0801adbc17ebed6124d647e09dc587b781442c8e,Alfredo Deza,1422651627,adeza@redhat.com,Fri Jan 30 16:00:27 2015 -0500,"test that op delete objects are ignored Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,8.0,0.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",208.0,2.0,0.004826388888888889,1.0,98.0,34.006854256854254,87.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+11fec0c3658ac148ce0db0b02ea03b36a8d99817,Alfredo Deza,1422651210,adeza@redhat.com,Fri Jan 30 15:53:30 2015 -0500,"initial test structure for incremental sync Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,62.0,0.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",146.0,2.0,7.054606481481481,1.0,97.0,33.006854256854254,86.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e5f71810e06e545c1a98f5ec5cfbcde0a27b3681,Alfredo Deza,1422566771,adeza@redhat.com,Thu Jan 29 16:26:11 2015 -0500,"more fixes to use entry objects instead of the object name Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",519.0,5.0,0.028171296296296295,1.0,96.0,34.09018759018759,85.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8a6148f7acfaa88d002c35213361e20fc0c9084e,Alfredo Deza,1422564337,adeza@redhat.com,Thu Jan 29 15:45:37 2015 -0500,"FIX: sync_object needs obj not obj.name Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",519.0,5.0,0.03729166666666667,1.0,95.0,34.637806637806634,84.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4cecbc1e379d64ad0cbb0281fdf059a5ef9e0fd7,Alfredo Deza,1422561115,adeza@redhat.com,Thu Jan 29 14:51:55 2015 -0500,"get a .name to make objects from logs look like objects from boto Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",517.0,5.0,0.1633101851851852,1.0,94.0,33.637806637806634,83.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+39763b99e70398bdcf090fde976a7d7d5ad5ae67,Alfredo Deza,1422547005,adeza@redhat.com,Thu Jan 29 10:56:45 2015 -0500,"regardless of the type of object we get, filter them for versioned ones Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",512.0,5.0,0.7543055555555556,1.0,93.0,34.042568542568546,82.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9f16b818c631089f1394d9218cbe255499acd6d1,Alfredo Deza,1422483937,alfredo@deza.pe,Wed Jan 28 17:25:37 2015 -0500,"Merge pull request #20 from ceph/wip-9686-sync-marker new sync marker and `get_worker_bound` API
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8779f360e9326397d3015a6a0336187d3fd4db6f,Alfredo Deza,1422481833,adeza@redhat.com,Wed Jan 28 16:50:33 2015 -0500,"initial take on a filtering helper to ignore certain entries in the logs Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,14.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",498.0,5.0,0.23675925925925925,1.0,92.0,33.19336219336219,81.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+cfe55295f6136387fe566e49b32f95c1fc750a1d,Alfredo Deza,1422461377,adeza@redhat.com,Wed Jan 28 11:09:37 2015 -0500,"delete_marker operations require DELETE http requests Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,2.0,0.9182958340544896,3.0,3.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",554.5,5.0,0.07195023148148148,2.0,91.0,32.35505050505051,80.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d22a4cbb03d0b45a52f50e33c596612d5b8e0f22,Alfredo Deza,1422456958,adeza@redhat.com,Wed Jan 28 09:55:58 2015 -0500,"BucketIndexEntry allows extra values now Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,True,"[""42bf4c36482796c3bce8463707a9a02941520f27""]",1.0,1.0,1.0,0.0,14.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",485.0,5.0,0.8040277777777778,1.0,90.0,31.855050505050507,79.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+58733ea8b237a31b6abba8d322a2fdd17cb4647e,Alfredo Deza,1422453363,adeza@redhat.com,Wed Jan 28 08:56:03 2015 -0500,"intra_region syncs needs to call mark_delete_object when there is a delete_marker Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,7.0,7.0,"radosgw_agent/client.py,CAS_DELIMITER",611.0,4.0,0.8180671296296296,1.0,89.0,30.864141414141415,78.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d1db66a99f0366a9a240a5f77a5c5a88ddc00ce8,Alfredo Deza,1422387490,adeza@redhat.com,Tue Jan 27 14:38:10 2015 -0500,"remove unused variable Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",485.0,5.0,0.9021527777777778,1.0,88.0,29.91969696969697,77.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ac421a37b38871f86f52a42e75dbb7ff70082680,Alfredo Deza,1422382682,adeza@redhat.com,Tue Jan 27 13:18:02 2015 -0500,"fix a few other obj.name references Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",611.0,4.0,0.09931712962962963,1.0,87.0,31.419696969696965,76.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+51458c537ffd8f25ad53f7b8ef0de950d18484ef,Alfredo Deza,1422374101,adeza@redhat.com,Tue Jan 27 10:55:01 2015 -0500,"note that mark_delete is only for full sync operations Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",608.0,4.0,0.7476388888888889,1.0,86.0,30.919696969696965,75.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6b59b41072310c55ee1e3b7e7a6031cd58e21451,Alfredo Deza,1422311162,adeza@redhat.com,Mon Jan 26 17:26:02 2015 -0500,"fix attribute errors for exceptions in worker.py Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,True,"[""475aec21b962b354d98b3b10966a5f6edfe53f00""]",1.0,1.0,1.0,0.0,12.0,12.0,"radosgw_agent/worker.py,CAS_DELIMITER",487.0,5.0,7.227824074074074,1.0,45.0,9.419696969696968,36.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e7cab4c6780390803050692d798c23e160f91f18,Alfredo Deza,1422309544,adeza@redhat.com,Mon Jan 26 16:59:04 2015 -0500,"fix a logging statement referencing obj.name Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",484.0,5.0,4.017951388888889,1.0,85.0,30.419696969696965,74.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c0cd0dc351da7373555fce03a6d5d9a46063c86f,Alfredo Deza,1422309505,adeza@redhat.com,Mon Jan 26 16:58:25 2015 -0500,"mark an object with a delete mark or really perform a delete operation Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,46.0,8.0,"radosgw_agent/client.py,CAS_DELIMITER",570.0,4.0,0.2202199074074074,1.0,84.0,29.419696969696965,73.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+aef26b996af63df3e1b1226a265629d1690aa4d8,Alfredo Deza,1422290478,adeza@redhat.com,Mon Jan 26 11:41:18 2015 -0500,"send version id and epoch when deleting versioned objects Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,20.0,3.0,"radosgw_agent/client.py,CAS_DELIMITER",553.0,4.0,2.8629166666666666,1.0,83.0,30.262121212121208,72.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+599c1fb7b2ab5cd478aa11498db7db014b6a3b06,Alfredo Deza,1422043122,adeza@redhat.com,Fri Jan 23 14:58:42 2015 -0500,"get some docs into the obj check for validation Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Non Functional,False,False,,1.0,1.0,1.0,0.0,3.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",550.0,4.0,0.9346643518518518,1.0,82.0,30.762820512820507,71.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+dd49cfd50fc5a304a5e5bcefc2f6bd35d2ae5a45,Alfredo Deza,1422041692,adeza@redhat.com,Fri Jan 23 14:34:52 2015 -0500,"fix tests to accomodate for the new obj argument Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,10.0,8.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",144.0,2.0,4.1085416666666665,1.0,81.0,29.762820512820507,70.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ff018abd0986c3b046f94b094b7daea32bc058b1,Alfredo Deza,1421962393,adeza@redhat.com,Thu Jan 22 16:33:13 2015 -0500,"use .name in worker when logging output Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",484.0,5.0,0.20155092592592594,1.0,80.0,28.929487179487175,69.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2ddfff0630864d25603bad84a01b7dc175bf676f,Alfredo Deza,1421962367,adeza@redhat.com,Thu Jan 22 16:32:47 2015 -0500,"correct the params with the new is_versioned helper Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,9.0,15.0,"radosgw_agent/client.py,CAS_DELIMITER",556.0,4.0,0.009363425925925926,1.0,79.0,27.929487179487175,68.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fb4093435a6c928898330b512a9d58e257612482,Alfredo Deza,1421961607,adeza@redhat.com,Thu Jan 22 16:20:07 2015 -0500,"tests for the new helper that detects versioned objects Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,26.0,1.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",647.0,2.0,2.101712962962963,1.0,78.0,26.929487179487175,67.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8570efe60346fa7526c32fd9c78534becdc0e521,Alfredo Deza,1421961558,adeza@redhat.com,Thu Jan 22 16:19:18 2015 -0500,"add a new helper to detect if an object is versioned or not Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,12.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",544.0,4.0,0.0004861111111111111,1.0,77.0,25.929487179487175,66.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a2c25a1af7acbfd7dcf9d1f4eb7b1af4d4d5a860,Alfredo Deza,1421961516,adeza@redhat.com,Thu Jan 22 16:18:36 2015 -0500,"re-use the obj properties instead of requesting new arguments Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,True,"[""2ddfff0630864d25603bad84a01b7dc175bf676f""]",1.0,1.0,1.0,0.0,7.0,4.0,"radosgw_agent/client.py,CAS_DELIMITER",541.0,4.0,0.20879629629629629,1.0,76.0,24.96282051282051,65.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+97bb6dec77c6573882731547a5b26e1c3125c534,Alfredo Deza,1421944979,adeza@redhat.com,Thu Jan 22 11:42:59 2015 -0500,"use the .name attribute from the object Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,True,"[""8a6148f7acfaa88d002c35213361e20fc0c9084e""]",1.0,1.0,1.0,0.0,4.0,4.0,"radosgw_agent/worker.py,CAS_DELIMITER",484.0,5.0,1.8928587962962964,1.0,75.0,24.76282051282051,64.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c3d71ffb32e5ff8899a8ce98af31e28eb7ed58d0,Alfredo Deza,1421943476,adeza@redhat.com,Thu Jan 22 11:17:56 2015 -0500,"don't yield the key.name when listing objects Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,12.0,"radosgw_agent/client.py,CAS_DELIMITER",549.0,4.0,13.004085648148148,1.0,74.0,23.76282051282051,63.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ddbaf8af91c7c6953582117b53175258a138a659,Alfredo Deza,1421931845,alfredo@deza.pe,Thu Jan 22 08:04:05 2015 -0500,Merge pull request #21 from ktdreyer/rpm-dist packaging: use dist tag in RPM Release field,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5b61c30157755fc2f109c0ddc0caf00e43023161,Ken Dreyer,1421876875,kdreyer@redhat.com,Wed Jan 21 14:47:55 2015 -0700,"packaging: use dist tag in RPM Release field This change adds "".el6"", "".el7"", etc to the end of the RPM filename.
+
+More information about the dist tag can be found at
+http://fedoraproject.org/wiki/Packaging:DistTag
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",44.0,4.0,9.017488425925926,1.0,9.0,4.5,8.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4da670b5e0f64d71b931f9449b5ff35801aa5fc0,Alfredo Deza,1421852815,adeza@redhat.com,Wed Jan 21 10:06:55 2015 -0500,"add flag to indicate weather we are working with endpoints that support versioning Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,5.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",356.0,5.0,1.1574074074074073e-05,1.0,73.0,23.341391941391944,62.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ba87abf6d1ef3cb88fccbaf62514e5b925fd3408,Alfredo Deza,1421781436,adeza@redhat.com,Tue Jan 20 14:17:16 2015 -0500,"worker will now use the new get_worker_bound values Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,9.0,9.0,"radosgw_agent/worker.py,CAS_DELIMITER",484.0,5.0,0.20630787037037038,1.0,53.0,20.923931623931626,44.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6f44dc4c02e09b1ae186742bacba0c873c7b1de3,Alfredo Deza,1421780978,adeza@redhat.com,Tue Jan 20 14:09:38 2015 -0500,"better comment on default values for worker bound Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Perfective,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",522.0,4.0,0.010798611111111111,1.0,52.0,19.923931623931626,43.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b09ad6df1f0697cd93ca2e6db3779c45dc19bf3d,Alfredo Deza,1421780961,adeza@redhat.com,Tue Jan 20 14:09:21 2015 -0500,"incrementalSync will use the new worker_bound behavior Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,13.0,11.0,"radosgw_agent/sync.py,CAS_DELIMITER",324.0,6.0,0.11064814814814815,1.0,51.0,18.923931623931626,42.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f01cacfabf93a500f3ec5cb9346a0ab2ac20e572,Alfredo Deza,1421780045,adeza@redhat.com,Tue Jan 20 13:54:05 2015 -0500,"use the right key for timestamp: oldest_time Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",522.0,4.0,0.19064814814814815,1.0,50.0,17.923931623931626,41.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4be49a3052622a2d6b909fb9ca32d7ed684e7f5d,Alfredo Deza,1421780019,adeza@redhat.com,Tue Jan 20 13:53:39 2015 -0500,"tests for the new get_worker_bounds behavior Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,63.0,0.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",584.0,2.0,1.1161689814814815,1.0,49.0,16.923931623931626,40.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+24792e5e1b0e2a9e2b2fdebed5a4f59965fd928f,Josh Durgin,1421772850,jdurgin@redhat.com,Tue Jan 20 08:54:10 2015 -0800,"Merge pull request #19 from ceph/wip-10584 fix exception attribute errors in sync.py
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+51af43bc04f2427320a81801c188f36e0316e931,Alfredo Deza,1421771401,adeza@redhat.com,Tue Jan 20 11:30:01 2015 -0500,"fix exception attribute errors in sync.py Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,7.0,5.0,"radosgw_agent/sync.py,CAS_DELIMITER",322.0,6.0,33.45929398148148,1.0,44.0,12.923931623931626,35.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ae99c756df494aa65ed10dc6ea31e0ad04eb69a0,Alfredo Deza,1421763611,adeza@redhat.com,Tue Jan 20 09:20:11 2015 -0500,"move the constants from worker.py to constants.py Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,4.0,"radosgw_agent/worker.py,CAS_DELIMITER",487.0,5.0,1.1574074074074073e-05,1.0,48.0,14.923931623931626,39.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f434327a9692e483c21a78c1fa09d00f2d1c1a66,Alfredo Deza,1421763591,adeza@redhat.com,Tue Jan 20 09:19:51 2015 -0500,"move constant values to a new module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"radosgw_agent/constants.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,47.0,13.923931623931626,38.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0f9205807da4572e38ac951601bd083ac1519030,Alfredo Deza,1421763573,adeza@redhat.com,Tue Jan 20 09:19:33 2015 -0500,"make get_worker_bound return a dict to support new keys automatically Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,29.0,10.0,"radosgw_agent/client.py,CAS_DELIMITER",503.0,4.0,0.9267708333333333,1.0,46.0,12.923931623931626,37.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+88a6638e38f2807a4049fb6f516eb2cf2c796d90,Josh Durgin,1421689145,jdurgin@redhat.com,Mon Jan 19 09:39:05 2015 -0800,"Merge pull request #18 from ceph/wip-10569 exceptions refactoring
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0574b54c1e0511cb8cd1ea0aef0b092fd8546dfe,Alfredo Deza,1421686714,adeza@redhat.com,Mon Jan 19 11:58:34 2015 -0500,"fix the worker exception tests Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",True,Corrective,True,True,"[""beec71f2d23a29322d1c5d7e6d4802004d72d050""]",1.0,1.0,1.0,0.0,11.0,10.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",143.0,2.0,32.46457175925926,1.0,43.0,12.935042735042735,34.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2581d4c2ddd60daaaadd2b9450f67b09dde41396,Alfredo Deza,1421686695,adeza@redhat.com,Mon Jan 19 11:58:15 2015 -0500,"add the worker exceptions into their own module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,16.0,0.0,"radosgw_agent/exceptions.py,CAS_DELIMITER",42.0,1.0,0.03635416666666667,1.0,42.0,11.935042735042735,33.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3e32ca3caf04cd66279925675dffec76fe684e90,Alfredo Deza,1421686678,adeza@redhat.com,Mon Jan 19 11:57:58 2015 -0500,"get worker exceptions into the exceptions module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,True,"[""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,1.0,1.0,0.0,1.0,10.0,"radosgw_agent/worker.py,CAS_DELIMITER",496.0,5.0,32.46415509259259,1.0,41.0,10.935042735042735,32.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+bfda463be2a3a8534d0a64248015e57947926ba8,Alfredo Deza,1421683582,adeza@redhat.com,Mon Jan 19 11:06:22 2015 -0500,"update tests for the new module changes Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,18.0,17.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",583.0,2.0,3.8599537037037037,1.0,40.0,9.935042735042735,31.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4f30099579db9901010c8787c67e6b8ffaf88600,Alfredo Deza,1421683554,adeza@redhat.com,Mon Jan 19 11:05:54 2015 -0500,"create an exceptions module Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,42.0,0.0,"radosgw_agent/exceptions.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,39.0,8.935042735042735,30.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+89a99287985ec4abc783130f79499d61bae70e78,Alfredo Deza,1421683500,adeza@redhat.com,Mon Jan 19 11:05:00 2015 -0500,"remove exceptions and errors from client onto exceptions.py Signed-off-by: Alfredo Deza <adeza@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,28.0,38.0,"radosgw_agent/client.py,CAS_DELIMITER",513.0,4.0,27.40861111111111,1.0,38.0,7.935042735042736,29.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3f7067691e7570ed71542b972248b21a1caf7d66,Alfredo Deza,1421350082,alfredo.deza@inktank.com,Thu Jan 15 14:28:02 2015 -0500,"add tests for listing objects in buckets with real http body from responses Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,59.0,5.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",529.0,2.0,23.549606481481483,1.0,37.0,7.03576388888889,28.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d886d38ed4bbf3d502223ce7c8659fb325535c05,Josh Durgin,1421106332,jdurgin@redhat.com,Mon Jan 12 15:45:32 2015 -0800,"Merge pull request #17 from ktdreyer/spec-cleanup packaging: RPM .spec cleanup
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0d5881e32471b7f9017e6c01ccadc34b6740b2be,Ken Dreyer,1421097764,kdreyer@redhat.com,Mon Jan 12 14:22:44 2015 -0700,"packaging: use full PyPI URL for RPM Source tarball Alfredo has published the radosgw-agent package to PyPI today. Add the
+full URL.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",44.0,4.0,0.03111111111111111,1.0,8.0,8.0,7.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8c4f9d5052548760473d61da15cdba6dbb583dc2,Ken Dreyer,1421095076,kdreyer@redhat.com,Mon Jan 12 13:37:56 2015 -0700,"packaging: add missing build deps to RPM In order to build the radosgw-agent package in mock, the python-devel
+and python-setuptools packages must be present in the buildroot.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,2.0,0.0,"radosgw-agent.spec,CAS_DELIMITER",42.0,4.0,0.0008912037037037037,1.0,7.0,7.0,6.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e343745a52613938889836a2a6ba2bd876364b0d,Ken Dreyer,1421094999,kdreyer@redhat.com,Mon Jan 12 13:36:39 2015 -0700,"packaging: remove RPM defattr setting The %defattr setting in the %files list is only necessary for very old
+versions of RPM.  For RHEL 6 and later, it's fine to leave it out.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",43.0,4.0,0.0007060185185185185,1.0,6.0,6.0,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e076a1ebcde2e72faf1a9b7e1488fd785448623f,Ken Dreyer,1421094938,kdreyer@redhat.com,Mon Jan 12 13:35:38 2015 -0700,"packaging: remove RPM %clean section The %clean section is only necessary for very old versions of RPM. For
+RHEL 6 and later, it's fine to leave it out.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,Perfective,False,False,,1.0,1.0,1.0,0.0,0.0,3.0,"radosgw-agent.spec,CAS_DELIMITER",46.0,4.0,0.000925925925925926,1.0,5.0,5.0,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+372f05109c5d1c2ca765c508fb8f1bd1055b8ca0,Ken Dreyer,1421094858,kdreyer@redhat.com,Mon Jan 12 13:34:18 2015 -0700,"packaging: simplify RPM %setup section Remove duplicated -n settings to %setup. There were two that both did
+the same thing, and neither one is needed, since %setup unpacks
+%{name}-%{version} by default.
+
+Make %setup run quietly (with -q). This fixes an rpmlint warning.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",46.0,4.0,0.001724537037037037,1.0,4.0,4.0,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4c3db96256f976a7b1ec716e5260482c4727775c,Ken Dreyer,1421094709,kdreyer@redhat.com,Mon Jan 12 13:31:49 2015 -0700,"packaging: add RPM %description Add a simple description to the RPM packaging. This phrase was
+more-or-less taken from the docs in ceph.git.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",45.0,4.0,0.0046875,1.0,3.0,3.0,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4d5ca6e159a16dfb90a4b5c81403e349bc9a626f,Ken Dreyer,1421094304,kdreyer@redhat.com,Mon Jan 12 13:25:04 2015 -0700,"packaging: use upper-case URL tag in RPM Either ""Url:"" or ""URL:"" works, but the Fedora project has standardized
+on ""URL:""
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",45.0,4.0,0.040625,1.0,2.0,2.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5a74505d762da2e1a3374a8bed546965fa5b8819,Alfredo Deza,1421093767,alfredo.deza@inktank.com,Mon Jan 12 15:16:07 2015 -0500,"create a changelog Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,13.0,0.0,"CHANGELOG.rst,CAS_DELIMITER",0.0,0.0,0.0,0.0,36.0,6.866319444444444,6.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+92b0b57191bd109e4ed66885f4ab31f54ec1dbf9,Alfredo Deza,1421092606,alfredo.deza@inktank.com,Mon Jan 12 14:56:46 2015 -0500,"update author email Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"setup.py,CAS_DELIMITER",39.0,4.0,285.06934027777777,1.0,35.0,5.866319444444444,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9a8a40bf9268bc29f08ce8cd25f6ee3fb68cfe19,Ken Dreyer,1421090794,kdreyer@redhat.com,Mon Jan 12 12:26:34 2015 -0700,"packaging: rm unnecessary RPM tags The BuildRoot tag is only needed on RHEL 5. RHEL 6 and newer are fine
+without this setting.
+
+The %{_prefix} macro is already /usr by default.
+
+The Vendor tag is something that should be left undefined in the
+packaging .spec itself. Ordinarily this is added during the build by the
+build system.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,0.0,3.0,"radosgw-agent.spec,CAS_DELIMITER",48.0,4.0,0.0018287037037037037,1.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3824f1103559854a7990713b2d099a6db8d3f185,Ken Dreyer,1421090636,kdreyer@redhat.com,Mon Jan 12 12:23:56 2015 -0700,"packaging: rm unnecessary RPM macro definitions Remove the extraneous macro definitions, %{name}, %{version},
+%{unmangled_version}, %{release}. RPM automatically sets these when we
+use the Name, Version, and Release tags.
+
+Discussed %{unmangled_version} in #ceph-devel today; not sure where that
+one came from.
+
+Signed-off-by: Ken Dreyer <kdreyer@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,11.0,"radosgw-agent.spec,CAS_DELIMITER",54.0,3.0,285.04653935185183,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ac231ab302c5b02460999f87ee8381b6071c122b,Josh Durgin,1421090528,jdurgin@redhat.com,Mon Jan 12 11:22:08 2015 -0800,"Merge pull request #16 from ktdreyer/fixes-from-v1.2 #10518: add fixes from v1.2
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2b719af6a7fabc91d1a1305a7b1e07026073b15a,Alfredo Deza,1420819923,alfredo.deza@inktank.com,Fri Jan 9 11:12:03 2015 -0500,"optionally use the versioned-epoch and version-id Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,True,"[""2ddfff0630864d25603bad84a01b7dc175bf676f""]",1.0,1.0,1.0,0.0,17.0,6.0,"radosgw_agent/client.py,CAS_DELIMITER",538.0,4.0,0.8637962962962963,1.0,72.0,7.88095238095238,61.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e07060aef6381cda8844bff4a3570375934f5318,Alfredo Deza,1420745291,alfredo.deza@inktank.com,Thu Jan 8 14:28:11 2015 -0500,"fallback to list() when we get 403's from the gateway Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,9.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",531.0,4.0,0.9256597222222223,1.0,71.0,7.047619047619046,60.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e51534f4b2177e361323fc255c681acfb6ec4170,Alfredo Deza,1420665314,alfredo.deza@inktank.com,Wed Jan 7 16:15:14 2015 -0500,"ask for all the versions in a bucket, regardless of support Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",529.0,4.0,1.1574074074074073e-05,1.0,70.0,6.9642857142857135,59.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3894adbee992a251697902f7ec88a748e249bae6,Alfredo Deza,1420482149,alfredo@deza.pe,Mon Jan 5 13:22:29 2015 -0500,Merge pull request #15 from ceph/wip-socket-leak client: workaround socket leak,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0006172cd793d20f2a198b243f74ada5ed4c5e5c,Josh Durgin,1419315396,jdurgin@redhat.com,Tue Dec 23 01:16:36 2014 -0500,"client: workaround socket leak Recreate the boto connection object after every 512 requests in an
+attempt to workaround a socket leak when the remote end closes the
+connection. Boto does not seem to be causing httplib to close() the
+sockets appropriately in some cases. I'm not sure exactly where
+the leak is occurring, but forcing boto to reinitialize its
+connection pool like this avoids it.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,Feature Addition,False,False,,1.0,2.0,2.0,0.9875257101057102,45.0,54.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/tests/test_client.py,CAS_DELIMITER",525.5,4.0,4.706903935185185,2.0,75.0,6.7944315489175455,63.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+fbcc4382cb5c2696b60e842e50aba2c652ca3a43,Alfredo Deza,1419016410,alfredo@deza.pe,Fri Dec 19 13:13:30 2014 -0600,Merge pull request #14 from ceph/wip-full-sync Remove dependency on requests and other full sync fixes,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+307ea6c9eb9ed3d7ebbdc7d885dfb1a971a2be48,Alfredo Deza,1418937522,alfredo.deza@inktank.com,Thu Dec 18 15:18:42 2014 -0600,"re-purpose urlencode to craft the query string for us without quoting again Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,70.0,1.0,"radosgw_agent/request.py,CAS_DELIMITER",120.0,1.0,0.8839467592592593,1.0,34.0,15.316666666666666,27.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6a35e4d1a91673678391f65de3a2e3c979b931f2,Alfredo Deza,1418937418,alfredo.deza@inktank.com,Thu Dec 18 15:16:58 2014 -0600,"create a test to check/prevent double quoting of urls Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,10.0,2.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",551.0,2.0,0.07831018518518519,1.0,33.0,14.316666666666666,26.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a8ab8d6e5f19cdfdbca7cad52f484532408d476f,Alfredo Deza,1418930652,alfredo.deza@inktank.com,Thu Dec 18 14:24:12 2014 -0500,"add get_bucket_list test Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,8.0,0.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",543.0,2.0,0.011516203703703704,1.0,32.0,13.316666666666666,25.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+28ff750ae8e13f3d65f79c920c853352f34b367c,Alfredo Deza,1418929657,alfredo.deza@inktank.com,Thu Dec 18 14:07:37 2014 -0500,"tests for get API calls Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,29.0,35.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",549.0,2.0,0.9905671296296297,1.0,31.0,12.316666666666666,24.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b7a312b56585b3895f2efac1bb56ce0730e495cb,Alfredo Deza,1418929083,alfredo.deza@inktank.com,Thu Dec 18 13:58:03 2014 -0500,"pep8/style changes to client.py Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,24.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",456.0,4.0,0.7624768518518519,1.0,30.0,11.316666666666666,23.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2e3b1f94fccb29582affddbe4823d74c544be614,Josh Durgin,1418881775,jdurgin@redhat.com,Wed Dec 17 21:49:35 2014 -0800,"worker: check op state for progress on any HTTP error 500 can be caused by an fcgi timeout when the operation still ends up
+succeeding. It doesn't hurt to check for op state being in progress in
+general in case other error codes happen but don't indicate actual
+failure of the copy, since wait_for_object fails immediately if the
+op state is not in progress.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",True,Corrective,True,True,"[""dd49cfd50fc5a304a5e5bcefc2f6bd35d2ae5a45""]",1.0,2.0,2.0,0.8023534428291901,5.0,40.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",337.0,5.0,0.01742476851851852,2.0,74.0,6.1732128571650104,62.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8d47f62f6f179040c504eba6ed01094a24da944e,Josh Durgin,1418880518,jdurgin@redhat.com,Wed Dec 17 21:28:38 2014 -0800,"sync: use ' ' as the default shard so retries can be stored The replica log api doesn't allow empty markers, but we may need to
+store retries in the replica log even if there are no log entries. Use
+' ' as a marker instead, since it is before all possible markers.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,None,False,False,,1.0,1.0,2.0,1.0,8.0,4.0,"radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",409.5,6.0,137.66809027777776,2.0,73.0,5.1732128571650104,61.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ebd81b016b0c833732e18764a09258826ab8ea4d,Josh Durgin,1418880021,jdurgin@redhat.com,Wed Dec 17 21:20:21 2014 -0800,"full data sync: treat 404 from bucket list as success Since results are paged, the exception may not occur immediately, so
+add a new type to distinguish it from other client exceptions, and
+catch it at any point during full sync of a bucket.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,Feature Addition,False,True,"[""0574b54c1e0511cb8cd1ea0aef0b092fd8546dfe"", ""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,2.0,3.0,1.5441141771508817,35.0,12.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/tests/test_worker.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",381.0,5.0,7.7923070987654315,3.0,72.0,4.1732128571650104,60.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ddf2ceb0dc0444e2ace0443a137836ceb5d4dcda,Alfredo Deza,1418863205,alfredo.deza@inktank.com,Wed Dec 17 19:40:05 2014 -0500,"http response does not have .raw anymore Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",456.0,4.0,14.10162037037037,1.0,29.0,11.316666666666666,22.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+68924c9ae57c14669e46aadef4135c188c8fb5fb,Josh Durgin,1418861774,jdurgin@redhat.com,Wed Dec 17 16:16:14 2014 -0800,"worker: ignore 404 when removing op_state It's fine if the gateway deleted it first.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,None,False,True,"[""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,1.0,1.0,0.0,2.0,0.0,"radosgw_agent/worker.py,CAS_DELIMITER",499.0,5.0,22.992905092592594,1.0,71.0,3.1732128571650104,59.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+77acddfcf39807051709c0acd11d31e0523998e9,Alfredo Deza,1418861149,alfredo.deza@inktank.com,Wed Dec 17 19:05:49 2014 -0500,"correct conditional for changing the path with queries Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,2.0,"radosgw_agent/request.py,CAS_DELIMITER",121.0,1.0,0.05811342592592592,1.0,28.0,10.316666666666666,21.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+661a28135943f5568e84bef527e20a061d597a5b,Alfredo Deza,1418856128,alfredo.deza@inktank.com,Wed Dec 17 17:42:08 2014 -0500,"ensure that a special first param is respected Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,True,"[""77acddfcf39807051709c0acd11d31e0523998e9""]",1.0,1.0,1.0,0.0,3.0,1.0,"radosgw_agent/request.py,CAS_DELIMITER",119.0,1.0,0.02136574074074074,1.0,27.0,9.316666666666666,20.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d6cc580a8e9014dfee81b7742f5a55b1a703d72c,Alfredo Deza,1418854282,alfredo.deza@inktank.com,Wed Dec 17 17:11:22 2014 -0500,"add an query encoding loop for make_request Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,15.0,0.0,"radosgw_agent/request.py,CAS_DELIMITER",104.0,1.0,13.997939814814815,1.0,26.0,8.983333333333334,19.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+67eb4c8025674555bc8aabc7d95c6a2125d2f6e9,Alfredo Deza,1418844072,alfredo.deza@inktank.com,Wed Dec 17 14:21:12 2014 -0500,"fix trailing slash with boto response on unit test Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",549.0,2.0,14.95107638888889,1.0,25.0,8.283333333333333,18.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a41b35f908d40fd9e557e7825f10ab889826883e,Alfredo Deza,1418045662,alfredo@deza.pe,Mon Dec 8 08:34:22 2014 -0500,Merge pull request #13 from ceph/wip-full-sync Bug fixes for full sync and a few other data sync cases,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+cb9919b4a882ef9b681cf009ab5943bbf8c33a88,Josh Durgin,1417829702,jdurgin@redhat.com,Fri Dec 5 17:35:02 2014 -0800,"client: return object names instead of boto resultsets Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",462.0,4.0,25.17077546296296,1.0,69.0,3.6221291610889352,57.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f939dd2319c15253cdf3d757b7c88b27e94efe02,Alfredo Deza,1417709271,alfredo.deza@inktank.com,Thu Dec 4 11:07:51 2014 -0500,"remove requests logging enabling call from cli.py Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",331.0,4.0,260.1919212962963,1.0,23.0,14.718390804597702,16.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9e7bf0250189dbc729dd497899375449ddd5cdba,Alfredo Deza,1417709253,alfredo.deza@inktank.com,Thu Dec 4 11:07:33 2014 -0500,"remove requests from the requirements.txt file Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"requirements.txt,CAS_DELIMITER",4.0,3.0,399.9745138888889,1.0,22.0,13.718390804597702,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7236a449755e28e3b82ff5c898a85a90b19875a7,Alfredo Deza,1417709241,alfredo.deza@inktank.com,Thu Dec 4 11:07:21 2014 -0500,"remove requests from the spec file Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",55.0,1.0,257.1645023148148,1.0,21.0,12.718390804597702,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+397303445d6a24c47af921c93150a9b44b55b0d0,Alfredo Deza,1417709225,alfredo.deza@inktank.com,Thu Dec 4 11:07:05 2014 -0500,"remove requests from debian control Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"debian/control,CAS_DELIMITER",19.0,2.0,260.1923958333333,1.0,20.0,11.718390804597702,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+039fec6b1888ee5fd6eab53e21976fde5e9ac5d8,Alfredo Deza,1417709209,alfredo.deza@inktank.com,Thu Dec 4 11:06:49 2014 -0500,"remove requests from setup.py Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"setup.py,CAS_DELIMITER",40.0,3.0,1.8171643518518519,1.0,19.0,10.718390804597702,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+701b35d1184c720e4b5f85b0ab32172fe45ba874,Alfredo Deza,1417709194,alfredo.deza@inktank.com,Thu Dec 4 11:06:34 2014 -0500,"remove requests from setup.cfg Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"setup.cfg,CAS_DELIMITER",2.0,1.0,464.7532986111111,1.0,18.0,9.718390804597702,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+169b18dc7e702cbae86bb4c1722470dd6e5a1824,Alfredo Deza,1417644860,alfredo.deza@inktank.com,Wed Dec 3 17:14:20 2014 -0500,"refactor the request helpers out of client Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Perfective,False,False,,1.0,1.0,1.0,0.0,104.0,0.0,"radosgw_agent/request.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,17.0,8.718390804597702,15.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d14d0a43df1b406865b46cd124ca43f6a38779b5,Alfredo Deza,1417644842,alfredo.deza@inktank.com,Wed Dec 3 17:14:02 2014 -0500,"ensure the tests are failing quickly Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,3.0,3.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",452.0,2.0,1.071099537037037,1.0,16.0,7.718390804597702,14.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+06830fde129dc8ca50da08715d08360c88c88b5d,Alfredo Deza,1417644825,alfredo.deza@inktank.com,Wed Dec 3 17:13:45 2014 -0500,"remove unused import Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",457.0,4.0,0.00016203703703703703,1.0,15.0,6.718390804597702,13.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0dff49fbf37c2ea904e72e0525c3e28b4109c433,Alfredo Deza,1417644811,alfredo.deza@inktank.com,Wed Dec 3 17:13:31 2014 -0500,"refactor client to use the new request method from boto Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,12.0,28.0,"radosgw_agent/client.py,CAS_DELIMITER",473.0,4.0,1.0710763888888888,1.0,14.0,5.718390804597702,12.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+bf329f7b4017fa11382199a37f3f3ddfcabeef19,Alfredo Deza,1417552299,alfredo.deza@inktank.com,Tue Dec 2 15:31:39 2014 -0500,"test the new boto request ensuring our urls are kept Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,True,"[""d14d0a43df1b406865b46cd124ca43f6a38779b5""]",1.0,1.0,1.0,0.0,76.0,3.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",379.0,2.0,6.879224537037037,1.0,13.0,5.885057471264368,11.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7b2282c17eb729bef276ceffe23084d3ee61ee2f,Alfredo Deza,1417552299,alfredo.deza@inktank.com,Tue Dec 2 15:31:39 2014 -0500,"test the new boto request ensuring our urls are kept Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,True,"[""67eb4c8025674555bc8aabc7d95c6a2125d2f6e9""]",1.0,1.0,1.0,0.0,71.0,0.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",478.0,2.0,6.879224537037037,1.0,24.0,5.885057471264368,17.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f98d747913a100a297a2c571d9ab392f1d1bd0a9,Alfredo Deza,1417552270,alfredo.deza@inktank.com,Tue Dec 2 15:31:10 2014 -0500,"remove requests, use boto directly Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,18.0,8.0,"radosgw_agent/client.py,CAS_DELIMITER",463.0,4.0,1.1574074074074073e-05,1.0,12.0,4.885057471264368,10.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+900f855e73fc30f2d9479da392c2e59efb1b0b2d,Alfredo Deza,1417552206,alfredo.deza@inktank.com,Tue Dec 2 15:30:06 2014 -0500,"add httpretty as a test dependency Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,1.0,2.0,0.0,"setup.py,CAS_DELIMITER,tox.ini,CAS_DELIMITER",23.5,2.0,395.01093171296293,2.0,11.0,3.8850574712643677,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c18d4fdc3ac86aa7597d92ec405264bcb4b2b421,Josh Durgin,1416957934,jdurgin@redhat.com,Tue Nov 25 15:25:34 2014 -0800,"Add tests for boto_call decorator Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,26.0,0.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",452.0,2.0,1.1574074074074073e-05,1.0,70.0,4.826975175416674,58.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e6f514825097d221883f38af9ca476849221877d,Josh Durgin,1416957934,jdurgin@redhat.com,Tue Nov 25 15:25:34 2014 -0800,"Add tests for boto_call decorator Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,26.0,0.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",353.0,2.0,8.253240740740742,1.0,68.0,4.826975175416674,56.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0965b689bed1c370c03c8db611046954423636ec,Josh Durgin,1416878503,jdurgin@redhat.com,Mon Nov 24 17:21:43 2014 -0800,"More tests for wait_for_object() Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,24.0,0.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",138.0,2.0,0.03837962962962963,1.0,67.0,3.828176678187699,55.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+39a967e8e5ac1112a534697663bd3eb7fe1cb59b,Josh Durgin,1416875187,jdurgin@redhat.com,Mon Nov 24 16:26:27 2014 -0800,"Immediately fail when op state is not found There's a very narrow window in which our connection sending the copy
+request could fail before radosgw records the op state, and we query
+the op state in that time. Retrying later at that point is fine, and
+avoids a long timeout if there is a bug causing us to reach this point
+without the op state ever being recorded. This race hasn't been
+observed in practice.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",True,Corrective,True,True,"[""0574b54c1e0511cb8cd1ea0aef0b092fd8546dfe"", ""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,2.0,2.0,0.6193821946787638,13.0,0.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",312.0,5.0,0.018831018518518518,1.0,66.0,2.828176678187699,54.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+bcf04288e1ca0207529be3fb8a6a7778d14afb60,Josh Durgin,1416873560,jdurgin@redhat.com,Mon Nov 24 15:59:20 2014 -0800,"Treat HTTP 500 as any other HTTP error for a copy request We still want to retry later, since 500 could be the gateway timing
+out, or it being upgraded to fix a bug, etc.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",True,Corrective,True,True,"[""2e3b1f94fccb29582affddbe4823d74c544be614""]",1.0,2.0,2.0,0.8366407419411673,4.0,11.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",315.5,5.0,9.581707175925926,2.0,65.0,1.8289207258067466,53.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d088f7a00c488f65b23252bdfdf0312d8be2e0e5,Alfredo Deza,1416428639,alfredo.deza@inktank.com,Wed Nov 19 15:23:59 2014 -0500,"add a test that ensures that wait_for_object is not called if object is not found Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,True,"[""2e3b1f94fccb29582affddbe4823d74c544be614""]",1.0,2.0,2.0,0.5916727785823275,13.0,1.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",311.0,5.0,0.005625,2.0,10.0,7.053571428571429,9.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3d3edddc4264d2f9acda04bcf8bc22e6395243a2,Alfredo Deza,1416428584,alfredo.deza@inktank.com,Wed Nov 19 15:23:04 2014 -0500,"by default object is not found, changing only when sync_object_intra_region() works Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",507.0,5.0,0.009189814814814816,1.0,9.0,6.053571428571429,8.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9ac41dc7d1f061f9c38006640dde388ecbf50ce6,Alfredo Deza,1416427790,alfredo.deza@inktank.com,Wed Nov 19 15:09:50 2014 -0500,"raise SyncFailed on transient errors Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",True,Corrective,True,True,"[""bcf04288e1ca0207529be3fb8a6a7778d14afb60"", ""2e3b1f94fccb29582affddbe4823d74c544be614""]",1.0,1.0,1.0,0.0,18.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",492.0,5.0,0.2545601851851852,1.0,8.0,5.053571428571429,7.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d9c1fcfe6056dbb8af1fc371cda246c12575ccc7,Alfredo Deza,1416427749,alfredo.deza@inktank.com,Wed Nov 19 15:09:09 2014 -0500,"allow a stringified version of the http status code Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"radosgw_agent/client.py,CAS_DELIMITER",461.0,3.0,207.84505787037037,1.0,7.0,4.053571428571429,6.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+28742e53a4ce600b8aefc65e2b968bcc04d56cbe,Alfredo Deza,1416427722,alfredo.deza@inktank.com,Wed Nov 19 15:08:42 2014 -0500,"tests for sync_object in worker.py Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Preventative,False,True,"[""bcf04288e1ca0207529be3fb8a6a7778d14afb60"", ""2e3b1f94fccb29582affddbe4823d74c544be614"", ""0574b54c1e0511cb8cd1ea0aef0b092fd8546dfe"", ""dd49cfd50fc5a304a5e5bcefc2f6bd35d2ae5a45""]",1.0,1.0,1.0,0.0,115.0,0.0,"radosgw_agent/tests/test_worker.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,6.0,3.053571428571429,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c85ca8901159bfbed1f3d5f1bbbce06ebdaab7dd,Alfredo Deza,1416427704,alfredo.deza@inktank.com,Wed Nov 19 15:08:24 2014 -0500,"configure logging for testing Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,33.0,0.0,"radosgw_agent/tests/conftest.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,5.0,2.053571428571429,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e9a6aa700d3f3c79be4f7eb61f284b64ba209711,Alfredo Deza,1416405796,alfredo.deza@inktank.com,Wed Nov 19 09:03:16 2014 -0500,"log the exception as error Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,True,"[""9ac41dc7d1f061f9c38006640dde388ecbf50ce6"", ""2e3b1f94fccb29582affddbe4823d74c544be614""]",1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",492.0,4.0,256.60938657407405,1.0,4.0,1.0535714285714286,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+440c8a2472db9b5e9c8a862a509e4a7859f5ec0c,Josh Durgin,1416258839,jdurgin@redhat.com,Mon Nov 17 22:13:59 2014 +0100,"Merge pull request #10 from ceph/wip-coverage add parametrization for endpoint tests
+
+Reviewed-by: Josh Durgin <jdurgin@redhat.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5fbc5ecac2bf053a9e9406f7b3d6f5d5ca670dc9,Alfredo Deza,1416244854,alfredo.deza@inktank.com,Mon Nov 17 12:20:54 2014 -0500,"add parametrization for endpoint tests Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,62.0,13.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",304.0,2.0,385.1734490740741,1.0,3.0,0.05357142857142857,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6dcd568fc7094a4dea7edb583342a9fca09f0749,Josh Durgin,1415662762,jdurgin@redhat.com,Mon Nov 10 15:39:22 2014 -0800,"worker: process full sync for buckets with no log This way we catch objects that were uploaded before zones or data logs
+were set up. If there are actually no objects in the bucket, the
+bucket listing will tell us that.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",507.0,5.0,1.1574074074074073e-05,1.0,64.0,2.211185472195365,52.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+acafe780b68cfc7bae919a4acafd86ead16aa06f,Josh Durgin,1415657651,jdurgin@redhat.com,Mon Nov 10 14:14:11 2014 -0800,"client: don't hide boto return values The decorator for translating boto exceptions needs to return
+explicitly, or it will lose the return value of the original function,
+and cause full sync to fail for objects that aren't in the bucket
+index log.
+
+Signed-off-by: Josh Durgin <jdurgin@redhat.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",462.0,4.0,1.1574074074074073e-05,1.0,63.0,1.2111854721953652,51.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b01865af669a7117d52c4f1dd549c2ceda87ce4f,Yehuda Sadeh,1415654947,yehuda@redhat.com,Mon Nov 10 13:29:07 2014 -0800,"client: escape copy source header Need to esacpe the x-amz-copy-source header.
+
+Signed-off-by: Yehuda Sadeh <yehuda@redhat.com>
+",False,None,False,True,"[""2ddfff0630864d25603bad84a01b7dc175bf676f""]",1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",462.0,4.0,1.1574074074074073e-05,1.0,10.0,0.14475757856679333,8.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+cb32aadc0881da5f0335c179aab3733bd93cbb4e,Josh Durgin,1398469936,josh.durgin@inktank.com,Fri Apr 25 16:52:16 2014 -0700,"client: fix unicode handling Use unicode format strings, and don't url-encode the object copy path
+before passing it to requests, which will url-encode it for us.
+
+Partially-fixes: #8202
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,True,"[""2ddfff0630864d25603bad84a01b7dc175bf676f"", ""ac421a37b38871f86f52a42e75dbb7ff70082680""]",1.0,1.0,1.0,0.0,5.0,5.0,"radosgw_agent/client.py,CAS_DELIMITER",461.0,3.0,182.16193287037038,1.0,62.0,3.7917752909505413,50.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+213f1fd7729912100d457602b0056c982e301ff3,Sandon Van Ness,1396466717,sandon@inktank.com,Wed Apr 2 12:25:17 2014 -0700,"Update Debian Changelog. Signed-off-by: Sandon Van Ness <sandon@inktank.com>
+(cherry picked from commit cc845481a60d6d0da92879e5ef411d8d89c572f3)
+",False,None,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"debian/changelog,CAS_DELIMITER",11.0,1.0,131.79689814814816,1.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3e93de4a5519de5453ab7e7f57a20e1f3553bc6e,Sandon Van Ness,1396462615,sandon@inktank.com,Wed Apr 2 11:16:55 2014 -0700,"Branch for 1.2 release. Signed-off-by: Sandon Van Ness <sandon@inktank.com>
+(cherry picked from commit 17fa0f7dc85f658547dd79a5416f55fa709a4956)
+",False,None,False,False,,1.0,1.0,2.0,0.7219280948873623,5.0,5.0,"radosgw-agent.spec,CAS_DELIMITER,setup.py,CAS_DELIMITER",46.5,3.0,1.1574074074074073e-05,2.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8c154d07f63ac87f90cbf6978d1967694a8e2272,Josh Durgin,1395946490,josh.durgin@inktank.com,Thu Mar 27 11:54:50 2014 -0700,"logrotate: don't rotate empty logs Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"logrotate.conf,CAS_DELIMITER",6.0,1.0,8.349108796296296,1.0,61.0,9.233642745983943,10.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6325206b1656203521509ff6ccbff209baa09a88,Josh Durgin,1395490228,josh.durgin@inktank.com,Sat Mar 22 05:10:28 2014 -0700,"packaging: fix up spec file for non-python files Correct the installation of the binary, logrotate conf, and init script.
+Stop using INSTALLED_FILES. Instead explicitly list files and glob the
+python package, as recommended by Fedora's python packaging guide.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,2.0,2.0,3.0,1.3868909071322735,40.0,6.0,"MANIFEST.in,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER,scripts/radosgw-agent,CAS_DELIMITER",15.666666666666666,1.0,1.0227662037037037,1.0,59.0,11.268405391345894,4.5,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ae1d6d187d180543ae5a229301e340bec8686b87,Josh Durgin,1395459851,josh.durgin@inktank.com,Fri Mar 21 20:44:11 2014 -0700,"debian: fix init script installation Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,2.0,"debian/rules,CAS_DELIMITER",16.0,2.0,2.716712962962963,1.0,60.0,11.268405391345894,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c89df150dedc8f35d48373dc07f598997cc11889,Josh Durgin,1395441793,josh.durgin@inktank.com,Fri Mar 21 15:43:13 2014 -0700,"lock: fix race in background thread when shard_num changes shard_num can be unset and set to another value if we don't hold
+self.lock while depending on its value. This causes a crash if the
+log.error() triggers and tries to format None as an int.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,16.0,11.0,"radosgw_agent/lock.py,CAS_DELIMITER",102.0,1.0,245.63667824074074,1.0,51.0,3.47599175922638,48.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+40f22d3ee1808d6dd0dd42a2848d0e1899192e0d,Josh Durgin,1395228689,josh.durgin@inktank.com,Wed Mar 19 04:31:29 2014 -0700,"cli: add a default log file Now that the packages include /var/log/ceph/radosgw-agent, default to
+storing logs there, named after the configuration file or
+radosgw-agent.log if no config file was used.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,6.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",325.0,4.0,49.530960648148145,1.0,58.0,9.510507329036068,49.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d5c02a60771e24e4da9fbe2367035a241e6c9b99,Josh Durgin,1395228602,josh.durgin@inktank.com,Wed Mar 19 04:30:02 2014 -0700,"debian: depend on python 2.6 or higher Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"debian/control,CAS_DELIMITER",19.0,2.0,0.08506944444444445,1.0,57.0,8.510507329036068,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4d2c30c4aa187cfc21a7ecfa29b1c9893d305400,Josh Durgin,1395225127,josh.durgin@inktank.com,Wed Mar 19 03:32:07 2014 -0700,"packaging: add logrotate config There's no need to signal running agents since they use
+a WatchedFileHandler that detects rotation itself.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,2.0,2.0,3.0,1.4591479170272448,12.0,0.0,"debian/rules,CAS_DELIMITER,logrotate.conf,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",19.0,2.0,0.009390432098765432,1.0,56.0,7.510507329036068,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c8d243f503b39e67a8daec6df40b58fb993cc6e6,Josh Durgin,1395223910,josh.durgin@inktank.com,Wed Mar 19 03:11:50 2014 -0700,"packaging: add init scripts create log, run, and etc dirs as well
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,2.0,2.0,4.0,0.6136101802624796,113.0,0.0,"debian/dirs,CAS_DELIMITER,debian/rules,CAS_DELIMITER,init-radosgw-agent,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",12.25,2.0,51.19309027777778,2.0,55.0,6.510507329036068,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+aeb553d84465e0b52c41ce67b62b7f74fed8bb2c,Josh Durgin,1395221252,josh.durgin@inktank.com,Wed Mar 19 02:27:32 2014 -0700,"packaging: add dependency on python-requests Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,2.0,2.0,2.0,1.0,2.0,0.0,"debian/control,CAS_DELIMITER,radosgw-agent.spec,CAS_DELIMITER",29.0,2.0,102.35627314814815,2.0,54.0,5.510507329036068,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f7da42c61f2bd5303b5d80d749d53d86789e5ecc,Josh Durgin,1395221104,josh.durgin@inktank.com,Wed Mar 19 02:25:04 2014 -0700,"packaging: put requirements on separate lines for rpm Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,4.0,1.0,"radosgw-agent.spec,CAS_DELIMITER",37.0,1.0,1.4714583333333333,1.0,53.0,4.510507329036068,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5114b5ec981d9d6e7601f25cf5d28f91ff78075c,Josh Durgin,1395093970,josh.durgin@inktank.com,Mon Mar 17 15:06:10 2014 -0700,"packaging: add spec file This was used to build the 1.1 rpms
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,37.0,0.0,"radosgw-agent.spec,CAS_DELIMITER",0.0,0.0,0.0,0.0,52.0,3.5394687624483026,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5e7a98911e6a6db525d65981034d28065a045e47,Josh Durgin,1395091969,josh.durgin@inktank.com,Mon Mar 17 14:32:49 2014 -0700,"sync: add missing parameter to log statement Fixes http://tracker.ceph.com/issues/7741
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/sync.py,CAS_DELIMITER",318.0,6.0,38.961724537037036,1.0,50.0,2.5394687624483026,47.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a05446576b134cc75b385ca1af29456e1427949b,Josh Durgin,1394234745,josh.durgin@inktank.com,Fri Mar 7 15:25:45 2014 -0800,"worker: convert list to tuple so addition to set works Without this, an error like: TypeError: unhashable type: 'list' would
+occur when metadata was retried.
+
+Fixes: #7526
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",492.0,4.0,27.97337962962963,1.0,49.0,2.2596646989061853,46.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+de85c9a66a916f19e2ede3b736be9e14200de45f,Josh Durgin,1391817845,josh.durgin@inktank.com,Fri Feb 7 16:04:05 2014 -0800,"worker: process all bucket instance log entries at once Currently if there are more than max_entries in a single bucket
+instance's log, only max_entries of those will be processed, and the
+bucket instance will not be examined again until it is modified again.
+
+To keep it simple, get the entire log of entries to be updated and
+process them all at once. This means one busy shard may block others
+from syncing, but multiple instances of radosgw-agent can be run to
+circumvent that issue. With only one instance, users can be sure
+everything is synced when an incremental sync completes with no
+errors.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,1.0,1.0,0.0,26.0,17.0,"radosgw_agent/worker.py,CAS_DELIMITER",483.0,4.0,98.04131944444444,1.0,48.0,2.822017023767743,45.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a4b8fd83f04d8125edc00af88a210f3d929d60fc,Josh Durgin,1391802411,josh.durgin@inktank.com,Fri Feb 7 11:46:51 2014 -0800,"Merge pull request #8 from clewis/respect-max-entries Respect max_entries.
+
+Reviewed-by: Josh Durgin <josh.durgin@inktank.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+627137e216d3de42cb236dc31146dd7a1a9fcddf,Craig Lewis,1391725676,clewis@centraldesktop.com,Thu Feb 6 14:27:56 2014 -0800,"Use the object attribute max_entries, and get rid of the argument. ",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/sync.py,CAS_DELIMITER",318.0,5.0,96.97454861111112,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4676cc75ef5208f7467437c6aca03df0835e4439,Josh Durgin,1390949214,josh.durgin@inktank.com,Tue Jan 28 14:46:54 2014 -0800,"cli: need to import submodule of logging to use it Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",324.0,4.0,3.9465393518518517,1.0,47.0,3.169791571877223,44.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+cabc3a6a2da1d437f766003600e7fd524a96f7d2,Josh Durgin,1390608233,josh.durgin@inktank.com,Fri Jan 24 16:03:53 2014 -0800,"cli: use WatchedFileHandler to cooperate with logrotate Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",324.0,4.0,84.04118055555556,1.0,46.0,2.1982477930753794,43.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7b2aba22c8e9f64bbee4287be3e1db5ffbd5cc56,Gary Lowell,1385079465,gary.lowell@inktank.com,Thu Nov 21 16:17:45 2013 -0800,v1.1 ,False,None,False,False,,2.0,2.0,2.0,0.8112781244591328,7.0,1.0,"debian/changelog,CAS_DELIMITER,setup.py,CAS_DELIMITER",22.0,2.0,54.821984953703705,2.0,3.0,0.23076923076923078,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a8834b7a53d5fc10127d7a61f406977ebbab5916,Josh Durgin,1383347075,josh.durgin@inktank.com,Fri Nov 1 16:04:35 2013 -0700,"Include exception information in warnings This will provide more detail when an error occurs without requiring
+logging at the debug level.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,3.0,1.3020044834978892,27.0,23.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",373.6666666666667,5.0,3.8808603395061727,3.0,45.0,9.129925303454716,42.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5c233504b66f64cbdc2f07b5d5b3812842d6d668,Josh Durgin,1383340537,josh.durgin@inktank.com,Fri Nov 1 14:15:37 2013 -0700,"worker: don't try to remove opstate for deletes Only the copy operation creates an op state. If the object does not
+exist, there is no op state to delete.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,3.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",481.0,4.0,7.049571759259259,1.0,44.0,8.129925303454716,41.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e789be2780c33cea18fc913f7558d2393e68cf3b,Josh Durgin,1383151455,josh.durgin@inktank.com,Wed Oct 30 09:44:15 2013 -0700,"requirements: set lower bound for requests 1.2.1 includes url-encoding headers, which we rely on.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,0.9182958340544896,3.0,3.0,"requirements.txt,CAS_DELIMITER,setup.py,CAS_DELIMITER",21.5,3.0,50.18200810185185,2.0,43.0,11.206220821661997,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3491d5a8c7158588c3a1e2310913180eb3e25f12,Josh Durgin,1382994118,josh.durgin@inktank.com,Mon Oct 28 14:01:58 2013 -0700,"Merge pull request #6 from ceph/wip-fixes Wip fixes
+Reviewed-by: Josh Durgin <josh.durgin@inktank.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f825466e1f0ba4709b1b2727cce435de10d936da,Alfredo Deza,1382965868,alfredo.deza@inktank.com,Mon Oct 28 09:11:08 2013 -0400,"normalize indentation to 4 spaces Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,5.0,5.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",304.0,2.0,0.012175925925925925,1.0,2.0,2.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f47ac5353a918426c608349b51d802d48a6a0a6b,Alfredo Deza,1382964816,alfredo.deza@inktank.com,Mon Oct 28 08:53:36 2013 -0400,"do not mix tabs and spaces Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,24.0,24.0,"radosgw_agent/tests/test_client.py,CAS_DELIMITER",304.0,1.0,12.917789351851852,1.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+03bf9f4c1f367b1e2d24f48d46e1a38b53d9ed45,Alfredo Deza,1382964778,alfredo.deza@inktank.com,Mon Oct 28 08:52:58 2013 -0400,"remove semicolons from statements Signed-off-by: Alfredo Deza <alfredo.deza@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/sync.py,CAS_DELIMITER",274.0,4.0,12.791608796296297,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5caf0588941328dd938983170e01899173a6a5b7,Josh Durgin,1382731567,josh.durgin@inktank.com,Fri Oct 25 13:06:07 2013 -0700,"sync: handle modified (meta)data log api It now returns the last marker in addition to the log entries, which
+are now in a separate field.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,9.0,7.0,"radosgw_agent/sync.py,CAS_DELIMITER",313.0,4.0,0.019618055555555555,1.0,42.0,10.700627558715794,40.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e598ec2ffdb137414c31e049d5c49baef47c836d,Josh Durgin,1382731454,josh.durgin@inktank.com,Fri Oct 25 13:04:14 2013 -0700,"worker: treat 404 as an empty marker If the log does not exist at all, since no operations have been completed
+on that bucket, we get a 404.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,1.0,1.0,0.0,5.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",478.0,4.0,0.0016087962962962963,1.0,41.0,9.700627558715794,39.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+198608f72003fa4205bca22d05d0696d0cee885c,Josh Durgin,1382731315,josh.durgin@inktank.com,Fri Oct 25 13:01:55 2013 -0700,"worker: use the full op_id when waiting self.op_id is just the last part of it. Get it from the caller
+instead.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""2e3b1f94fccb29582affddbe4823d74c544be614""]",1.0,1.0,1.0,0.0,3.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",478.0,4.0,0.0026041666666666665,1.0,40.0,8.700627558715794,38.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e30b40a9f1466a5c0c8f693b77b4bfece458879d,Josh Durgin,1382731145,josh.durgin@inktank.com,Fri Oct 25 12:59:05 2013 -0700,"client: fix url_safe for non-unicode Actually use urllib.quote() in both cases.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,4.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",459.0,3.0,0.009942129629629629,1.0,39.0,7.724437082525317,37.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+7832d5ba177898c7bf7b38b8d8271a75507c53fc,Josh Durgin,1382731090,josh.durgin@inktank.com,Fri Oct 25 12:58:10 2013 -0700,"worker: only wait for existing objects Copy operations are long running and use a state log, but deletes do
+not.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""2e3b1f94fccb29582affddbe4823d74c544be614""]",1.0,1.0,1.0,0.0,5.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",474.0,4.0,10.086886574074073,1.0,38.0,6.724437082525317,36.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+02e0ed73ddcec04526ff551fcf33afec4f76f08b,Josh Durgin,1382730286,josh.durgin@inktank.com,Fri Oct 25 12:44:46 2013 -0700,"client: don't escape copy source header Requests takes care of this for us.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",459.0,3.0,30.77712962962963,1.0,37.0,5.724437082525317,35.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+3572e360b0c32c7ce8fe7646a3942c4285309c3a,Josh Durgin,1382729991,josh.durgin@inktank.com,Fri Oct 25 12:39:51 2013 -0700,"reduce default logging level for boto Log messages about each new connection aren't very useful.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,4.0,3.0,"radosgw_agent/cli.py,CAS_DELIMITER",323.0,4.0,0.0013773148148148147,1.0,36.0,4.724437082525317,34.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1ebbea40b35e3bfa74e0704216f86f4930a77242,Josh Durgin,1382729872,josh.durgin@inktank.com,Fri Oct 25 12:37:52 2013 -0700,"Handle errors preparing for an incremental sync Log the issue, but keep retrying with a delay.
+Move continuous incremental sync and preparing retry into
+helpers in sync.py.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""a8834b7a53d5fc10127d7a61f406977ebbab5916""]",1.0,1.0,2.0,0.9905577004075261,54.0,16.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER",299.0,4.0,10.072789351851851,1.0,35.0,3.7244370825253172,33.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+74c182912b3712811a0f839d903259c6c37b775d,Josh Durgin,1381859896,josh.durgin@inktank.com,Tue Oct 15 10:58:16 2013 -0700,"Merge pull request #5 from kri5/wip-datasync Rename variable to match option parsing variable name (again)
+
+Reviewed-by: Josh Durgin <josh.durgin@inktank.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+063521cc7c0beb5372df2f5ff14867b02faf436b,Christophe Courtaut,1381859583,christophe.courtaut@gmail.com,Tue Oct 15 19:53:03 2013 +0200,"Rename variable to match option parsing variable name (again) The object_timeout variable was renamed object_sync_timeout
+in the option parser, but not elsewhere.
+
+This patch fixes it.
+
+Signed-off-by: Christophe Courtaut <christophe.courtaut@gmail.com>
+",True,Corrective,True,False,,1.0,1.0,3.0,1.584962500721156,6.0,6.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",357.3333333333333,4.0,6.909263117283952,2.0,4.0,2.5,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+f283e230c8ed03b1f2c633e4145601b9fd1b40ee,Josh Durgin,1381858576,josh.durgin@inktank.com,Tue Oct 15 10:36:16 2013 -0700,"Merge pull request #4 from kri5/wip-datasync Rename variable to match option parsing variable name
+
+Reviewed-by: Josh Durgin <josh.durgin@inktank.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8ee44b6f8274817b80c2cc7d9243fed2d66cf7e9,Christophe Courtaut,1381858363,christophe.courtaut@gmail.com,Tue Oct 15 19:32:43 2013 +0200,"Rename variable to match option parsing variable name The data_log_window variable was renamed rgw_data_log_window
+in the option parser, but not elsewhere.
+
+This patch fixes it.
+
+Signed-off-by: Christophe Courtaut <christophe.courtaut@gmail.com>
+",True,Corrective,True,False,,1.0,1.0,2.0,1.0,8.0,8.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER",299.0,4.0,10.496747685185186,2.0,3.0,1.5,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+82423fc5e617613cf61b03d9858559c4cad54470,Josh Durgin,1381851463,josh.durgin@inktank.com,Tue Oct 15 08:37:43 2013 -0700,"Merge pull request #3 from kri5/wip-datasync Fix option parsing for destination arg
+
+Reviewed-by: Josh Durgin <josh.durgin@inktank.com>",,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a0491702e8480b036bf79197f8236365427856a5,Josh Durgin,1381848719,josh.durgin@inktank.com,Tue Oct 15 07:51:59 2013 -0700,"Forgot to add unit tests dir as well Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,0.0,304.0,0.0,"radosgw_agent/tests/__init__.py,CAS_DELIMITER,radosgw_agent/tests/test_client.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,34.0,4.228571428571428,32.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2b9844dbb2f855c5007ece63ac3817885d6e8fab,Christophe Courtaut,1381831746,christophe.courtaut@gmail.com,Tue Oct 15 12:09:06 2013 +0200,"Fix option parsing for destination arg As mentionned at http://docs.python.org/3.4/library/argparse.html#nargs,
+nargs=1 will not provide the default behaviour, but instead will produce
+a list of args, and that is not what we want.
+
+This patch uses nargs=None to provide default behaviour instead.
+
+As it is a positionnal argument, we can't use required option.
+
+Signed-off-by: Christophe Courtaut <christophe.courtaut@gmail.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",324.0,4.0,20.37736111111111,1.0,2.0,0.5,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+02e9d9d3d7994bafe20ad4b73c8137afc2baa211,Josh Durgin,1381767058,josh.durgin@inktank.com,Mon Oct 14 09:10:58 2013 -0700,Add forgotten files for running tests ,False,Feature Addition,False,False,,1.0,1.0,2.0,0.8453509366224365,11.0,0.0,"requirements-dev.txt,CAS_DELIMITER,tox.ini,CAS_DELIMITER",0.0,0.0,0.0,0.0,33.0,3.3545787545787547,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+014d3dcc4869157c12db4d7d6060d91067851d6a,Josh Durgin,1380071142,josh.durgin@inktank.com,Tue Sep 24 18:05:42 2013 -0700,"Implement data sync and several other changes that should be separate commits The larger changes are:
+- metadata sync uses the replica log for retrying after errors
+- command line usage is simpler, and requires fewer options
+- source and destination are gotten from / validated against
+  the region map, with unit tests
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,True,"[""2b9844dbb2f855c5007ece63ac3817885d6e8fab"", ""8ee44b6f8274817b80c2cc7d9243fed2d66cf7e9"", ""063521cc7c0beb5372df2f5ff14867b02faf436b"", ""e30b40a9f1466a5c0c8f693b77b4bfece458879d"", ""a8834b7a53d5fc10127d7a61f406977ebbab5916"", ""a05446576b134cc75b385ca1af29456e1427949b"", ""5e7a98911e6a6db525d65981034d28065a045e47"", ""cb32aadc0881da5f0335c179aab3733bd93cbb4e"", ""acafe780b68cfc7bae919a4acafd86ead16aa06f"", ""9ac41dc7d1f061f9c38006640dde388ecbf50ce6"", ""51af43bc04f2427320a81801c188f36e0316e931"", ""e7cab4c6780390803050692d798c23e160f91f18"", ""6b59b41072310c55ee1e3b7e7a6031cd58e21451"", ""e5f71810e06e545c1a98f5ec5cfbcde0a27b3681"", ""33df9b77b153ed9278374e6e8381e5ba7e718d0d""]",2.0,2.0,6.0,1.9101119896175076,923.0,551.0,"bootstrap,CAS_DELIMITER,radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER,setup.py,CAS_DELIMITER",206.66666666666666,5.0,23.75701967592593,4.0,32.0,4.552175602175604,16.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5eda384452698246df84f7d55199cef9adda1b8d,Josh Durgin,1379964226,josh.durgin@inktank.com,Mon Sep 23 12:23:46 2013 -0700,Merge pull request #1 from kri5/wip-datasync Reviewed-by: Josh Durgin <josh.durgin@inktank.com>,,Merge,False,False,,0.0,0.0,0.0,0.0,0.0,0.0,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+cb29109fc68adc8633d2680a8a8500317ed766ca,Christophe Courtaut,1379946325,christophe.courtaut@gmail.com,Mon Sep 23 16:25:25 2013 +0200,Adds data sync capabilities to test server ,False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,17.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",277.0,4.0,0.017847222222222223,1.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6e5ae454a7d0390034b75fa4a8f86e2e9ffbf4a8,Christophe Courtaut,1379944783,christophe.courtaut@gmail.com,Mon Sep 23 15:59:43 2013 +0200,"Fix cli to match obj/method names according to sync.py Signed-off-by: Christophe Courtaut <christophe.courtaut@gmail.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,35.0,22.0,"radosgw_agent/cli.py,CAS_DELIMITER",264.0,3.0,12.529155092592593,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+393a672517da68c584e3f4c4183c20eaf720129e,Josh Durgin,1379102494,josh.durgin@inktank.com,Fri Sep 13 13:01:34 2013 -0700,"Set up full data sync Get data log markers and store them after all buckets are synced. Also
+get bucket-index markers for each bucket, and update them in the
+bucket index replica log once syncing is complete. The bucket-index
+replica log updates should be moved to happend after each bucket once
+the actual object copying is implemented.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,3.0,1.3467106034025305,84.0,54.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",280.0,3.0,3.127322530864197,2.0,31.0,6.969877344877346,30.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2521cc49345c4c76adac0e339265dcb40b3ebeb2,Josh Durgin,1378862264,josh.durgin@inktank.com,Tue Sep 10 18:17:44 2013 -0700,"Refactor sync and fix errors found by pyflakes Instead of 4 copies of queue and worker creation
+and results gathering, just have one, with subclasses
+that can add special behavior at the beginning or end.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,3.0,0.21461997440605948,93.0,153.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",306.0,3.0,9.877916666666666,2.0,30.0,6.154401154401155,29.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2e5475b85fffbffa380f1e8a221499c317ce6ff1,Josh Durgin,1378772352,josh.durgin@inktank.com,Mon Sep 9 17:19:12 2013 -0700,"client: escape bucket and object names used in urls Convert to utf8 since urllib doesn't handle unicode well in python 2.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""cb32aadc0881da5f0335c179aab3733bd93cbb4e"", ""2ddfff0630864d25603bad84a01b7dc175bf676f""]",1.0,1.0,1.0,0.0,11.0,2.0,"radosgw_agent/client.py,CAS_DELIMITER",237.0,3.0,0.0032407407407407406,1.0,29.0,5.1912698412698415,28.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+eb93640327efd36dd31161bb612db326faef34fb,Josh Durgin,1378772072,josh.durgin@inktank.com,Mon Sep 9 17:14:32 2013 -0700,"client: fix spacing Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,3.0,3.0,"radosgw_agent/client.py,CAS_DELIMITER",237.0,3.0,13.250300925925925,1.0,28.0,4.1912698412698415,27.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+13010d113939f8647fd8d81bb60c8048a501e9fc,Josh Durgin,1378771944,josh.durgin@inktank.com,Mon Sep 9 17:12:24 2013 -0700,"sync: remove extraneous error checking These loops all end once a result of any sort is received for a child
+process. It will already complete if every worked has a connection
+error.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,0.0,24.0,"radosgw_agent/sync.py,CAS_DELIMITER",276.0,3.0,13.248819444444445,1.0,27.0,3.1912698412698415,26.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2bd383d3ce9cb45c7280f70ef84881a04608b7f9,Joe Buck,1377880006,jbbuck@gmail.com,Fri Aug 30 09:26:46 2013 -0700,"Improve exception handling Catch exceptions and continue syncing items
+in that shard but do NOT update the worker
+bounds. This will result in redundant work
+but prevents an error from stopping
+the syncing of objects 'after' that object
+in the same shard.
+
+Signed-off-by: Joe Buck <jbbuck@gmail.com>
+Reviewd-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""a8834b7a53d5fc10127d7a61f406977ebbab5916""]",1.0,1.0,1.0,0.0,22.0,6.0,"radosgw_agent/worker.py,CAS_DELIMITER",201.0,2.0,24.941875,1.0,1.0,0.1111111111111111,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1ce24c10cd5a0445121b7f7e17ee67c935de1a5a,Joe Buck,1377627246,jbbuck@gmail.com,Tue Aug 27 11:14:06 2013 -0700,"Getting code readh for handoff Signed-off-by: Joe Buck <jbbuck@gmail.com>
+",False,None,False,True,"[""eb93640327efd36dd31161bb612db326faef34fb"", ""2521cc49345c4c76adac0e339265dcb40b3ebeb2"", ""6e5ae454a7d0390034b75fa4a8f86e2e9ffbf4a8""]",1.0,1.0,4.0,1.6765473027545754,386.0,16.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",202.25,3.0,20.972890624999998,3.0,2.0,0.125,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+dd6cacb6e914d234ab377d8f32c16c3d9bc794bb,Gary Lowell,1377560317,gary.lowell@inktank.com,Mon Aug 26 16:38:37 2013 -0700,"setup.py:  Add a version range to the python-boto dependency. Signed-off-by: Gary Lowell  <gary.lowell@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,2.0,1.0,2.0,2.0,"requirements.txt,CAS_DELIMITER,setup.py,CAS_DELIMITER",19.0,2.0,45.60517939814815,2.0,2.0,2.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+25a93336f34cf3dcb0ecccd653efcc9822045286,Gary Lowell,1377554509,gary.lowell@inktank.com,Mon Aug 26 15:01:49 2013 -0700,"setup.cfg:  Dependencies for rpm builds. These should track the dependencies listed in setup.py and
+requirements.txt.
+
+Signed-off-by: Gary Lowell  <gary.lowell@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,2.0,0.0,"setup.cfg,CAS_DELIMITER",0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ebb8f583fefbb8b51fd9f384f97ed2a48ca09de3,Gary Lowell,1377534236,gary.lowell@inktank.com,Mon Aug 26 09:23:56 2013 -0700,"debian:  Initial version debian control files Signed-off-by: Gary Lowell  <gary.lowell@inktank.com>
+",False,Feature Addition,False,False,,1.0,2.0,6.0,1.9637256124822595,36.0,0.0,"debian/changelog,CAS_DELIMITER,debian/compat,CAS_DELIMITER,debian/control,CAS_DELIMITER,debian/copyright,CAS_DELIMITER,debian/rules,CAS_DELIMITER,debian/source/format,CAS_DELIMITER",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8b5f6dd1ff59d2e71782482edcb30ac0782cc4d0,Yehuda Sadeh,1375725028,yehuda@inktank.com,Mon Aug 5 10:50:28 2013 -0700,"rename partial sync to incremental sync Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",False,Perfective,False,True,"[""2521cc49345c4c76adac0e339265dcb40b3ebeb2"", ""6e5ae454a7d0390034b75fa4a8f86e2e9ffbf4a8""]",1.0,1.0,3.0,1.2607717938967942,17.0,17.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",200.33333333333334,2.0,4.936547067901235,2.0,9.0,3.25,7.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+12000bc986c98bd170bea6f161b41d2302c18cee,Yehuda Sadeh,1375507200,yehuda@inktank.com,Fri Aug 2 22:20:00 2013 -0700,"set bounds on the dest zone, not on the source zone Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",False,None,False,True,"[""2521cc49345c4c76adac0e339265dcb40b3ebeb2""]",1.0,1.0,2.0,0.9910760598382222,5.0,4.0,"radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",174.0,2.0,14.894322916666667,2.0,8.0,2.25,6.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0988a5d1fd5f0397c55ecb29d2e786ee2f48504d,Josh Durgin,1374881131,josh.durgin@inktank.com,Fri Jul 26 16:25:31 2013 -0700,"test api: init response to empty This way len() etc works on it.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Preventative,False,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",252.0,2.0,1.0225810185185185,1.0,26.0,12.25,25.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+c796d022d8b51f084870f284289770322104b687,Josh Durgin,1374792780,josh.durgin@inktank.com,Thu Jul 25 15:53:00 2013 -0700,"Add a quick and dirty http serving mode for testing POST to --test-server-host:--test-server-port/metadata/[partial|full]
+to do a partial or full metadata sync. The server will respond
+when the sync is complete.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,True,"[""6e5ae454a7d0390034b75fa4a8f86e2e9ffbf4a8""]",1.0,1.0,1.0,0.0,67.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",186.0,2.0,6.191828703703703,1.0,25.0,16.416666666666664,24.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+24459e8a20578d46846c6cbd008bff5c0f814aca,Josh Durgin,1374257806,josh.durgin@inktank.com,Fri Jul 19 11:16:46 2013 -0700,"cli: use new name for partial sync delay Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/cli.py,CAS_DELIMITER",186.0,2.0,0.006215277777777778,1.0,24.0,20.833333333333332,23.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+80fdf075b8eada0c29b6683fdf2d8dd4ee4449c3,Josh Durgin,1374257269,josh.durgin@inktank.com,Fri Jul 19 11:07:49 2013 -0700,"cli: default partial sync delay to 20 seconds Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,2.0,"radosgw_agent/cli.py,CAS_DELIMITER",186.0,2.0,0.5032986111111111,1.0,23.0,19.833333333333332,22.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d693e6792dc74a2240ba5406417148e16bf1920d,Josh Durgin,1374257209,josh.durgin@inktank.com,Fri Jul 19 11:06:49 2013 -0700,"worker: fix typo making partial sync use the wrong entries Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,4.0,2.0,"radosgw_agent/worker.py,CAS_DELIMITER",199.0,2.0,0.4447337962962963,1.0,22.0,18.833333333333332,21.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5ed4f64daca77379e3298c644034dda635864140,Josh Durgin,1374218784,josh.durgin@inktank.com,Fri Jul 19 00:26:24 2013 -0700,"md partial sync: automatically renew log lock Run a separate thread to renew the lock every timeout / 2 period to
+guard against lock expiration.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,True,"[""c89df150dedc8f35d48373dc07f598997cc11889""]",1.0,1.0,2.0,0.9767124451747307,127.0,46.0,"radosgw_agent/lock.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",110.0,2.0,0.029947916666666668,1.0,21.0,17.833333333333332,20.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2cc0254db8dbb9ee1b624ff4114f826fb2ae31a0,Josh Durgin,1374213784,josh.durgin@inktank.com,Thu Jul 18 23:03:04 2013 -0700,"cli: fix type of number of workers option Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",186.0,2.0,0.2685300925925926,1.0,20.0,16.833333333333332,19.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6c19f6b7aa4cfc41acb6a60093a8cd1af5e9ec2c,Josh Durgin,1374213609,josh.durgin@inktank.com,Thu Jul 18 23:00:09 2013 -0700,"worker: remove data worker It will require rewriting to work in the new framework. This code can
+still be found in the history, but until then it's pointless to keep
+around.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,0.0,238.0,"radosgw_agent/worker.py,CAS_DELIMITER",458.0,2.0,0.2656597222222222,1.0,19.0,15.833333333333332,18.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+9747c39a83d17bf9fbb0d2ef63bd7cd071a6f112,Josh Durgin,1374190656,josh.durgin@inktank.com,Thu Jul 18 16:37:36 2013 -0700,"md sync: handle 404s on metadata on worker bounds Ignore 404 when deleting something.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""6b59b41072310c55ee1e3b7e7a6031cd58e21451""]",1.0,1.0,1.0,0.0,8.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",453.0,2.0,0.08337962962962962,1.0,18.0,14.833333333333332,17.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2957cdde0cfc1445a17de84993d5eba696454ebe,Josh Durgin,1374190583,josh.durgin@inktank.com,Thu Jul 18 16:36:23 2013 -0700,"cli: set the default logging level for the requests library higher There's too much noise for INFO to be a default level for it.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,3.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER",183.0,2.0,0.0009490740740740741,1.0,17.0,13.833333333333332,16.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+60254056b12bfa9a45318b46c4707e9303e2f5a6,Josh Durgin,1374190501,josh.durgin@inktank.com,Thu Jul 18 16:35:01 2013 -0700,"partial sync: make it run continuously Add an option to control how long to wait between sync attempts.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,True,"[""6e5ae454a7d0390034b75fa4a8f86e2e9ffbf4a8""]",1.0,1.0,1.0,0.0,16.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER",168.0,2.0,0.0007986111111111112,1.0,16.0,12.833333333333332,15.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8df047cdee163f069e1da1df26d339da76063160,Josh Durgin,1374190432,josh.durgin@inktank.com,Thu Jul 18 16:33:52 2013 -0700,"cli: check that int arguments are positive Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,12.0,4.0,"radosgw_agent/cli.py,CAS_DELIMITER",160.0,2.0,0.08078703703703703,1.0,15.0,11.833333333333332,14.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+21e13f571051277093f59f4bd7ceeb385433103b,Josh Durgin,1374183452,josh.durgin@inktank.com,Thu Jul 18 14:37:32 2013 -0700,"md sync: use replica log api to store persistent state Update the replica log in each worker as it finishes a batch of entries,
+and use the marker with a maximum number of entries instead of timestamps
+to specify which log entries to get.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""2521cc49345c4c76adac0e339265dcb40b3ebeb2""]",1.0,1.0,5.0,2.1691244326230756,144.0,155.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/store.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",192.6,2.0,0.5433935185185186,2.0,14.0,10.833333333333332,13.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a94507e144a04367686d282eee11bfb728782428,Josh Durgin,1374183306,josh.durgin@inktank.com,Thu Jul 18 14:35:06 2013 -0700,"client: clean up request generation Instead of having special strings as commands and handling those
+in a bunch of conditionals, put the path and data required directly
+in the method that uses it. This makes it easier to see the correspondence
+between a method and the API that it's calling.
+
+Add a general connection method so other files don't duplicate code.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,4.0,0.8655548554546307,78.0,127.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",233.75,2.0,2.7840480324074073,4.0,13.0,9.833333333333332,12.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8a7a685201436ad89421e4d4f4ea50956a26dd57,Josh Durgin,1374019294,josh.durgin@inktank.com,Tue Jul 16 17:01:34 2013 -0700,"md partial: simplify status processing Ignore the status of an entry entirely. Just sync each mentioned
+(section, name) pair once. For entries that are later aborted or
+otherwise don't complete, this causes a couple extra metadata
+requests, but these are inexpensive and should be rare. This is
+guaranteed to catch all updates, and is much simpler to understand and
+verify. Data sync may require more complex handling, but metadata sync
+is cheap enough to be able to use a simpler approach.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,11.0,71.0,"radosgw_agent/worker.py,CAS_DELIMITER",510.0,2.0,0.7822569444444445,1.0,12.0,8.833333333333332,11.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+17a0fde308619456d49fd216d3c9b481a7ce0c2e,Yehuda Sadeh,1373951707,yehuda@inktank.com,Mon Jul 15 22:15:07 2013 -0700,"fix partial workqueue termination Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,4.0,3.0,"radosgw_agent/worker.py,CAS_DELIMITER",509.0,1.0,0.4010763888888889,1.0,7.0,7.0,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+135db7217ce80f8a66cca65d0d517b374ae076a7,Yehuda Sadeh,1373949290,yehuda@inktank.com,Mon Jul 15 21:34:50 2013 -0700,"mdlog requests don't try to decode json response Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",False,None,False,False,,1.0,1.0,2.0,0.7219280948873623,5.0,5.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/store.py,CAS_DELIMITER",126.5,2.0,0.34337384259259257,2.0,6.0,6.0,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1edf73cad98aa6e3e9dd2f101c80cddac046f794,Yehuda Sadeh,1373942970,yehuda@inktank.com,Mon Jul 15 19:49:30 2013 -0700,"add missing module to requirements.txt Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,1.0,0.0,"requirements.txt,CAS_DELIMITER",3.0,1.0,7.475474537037037,1.0,5.0,5.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+233f22815427e464957a92d0dbae0524b06b8362,Josh Durgin,1373939451,josh.durgin@inktank.com,Mon Jul 15 18:50:51 2013 -0700,"Forgot to add store.py Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,False,,1.0,1.0,1.0,0.0,77.0,0.0,"radosgw_agent/store.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,11.0,8.0,10.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+a5436ae8715d5e8097927f1550a2b860e571c00e,Josh Durgin,1373917054,josh.durgin@inktank.com,Mon Jul 15 12:37:34 2013 -0700,"md partial sync: handle 404 locking a log Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,4.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",506.0,1.0,0.013773148148148149,1.0,10.0,7.0,9.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2c4c12d557744438731dafaa9335c059dbf8d3cf,Josh Durgin,1373915864,josh.durgin@inktank.com,Mon Jul 15 12:17:44 2013 -0700,"md full sync: put results in the right queue Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""2521cc49345c4c76adac0e339265dcb40b3ebeb2""]",1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/worker.py,CAS_DELIMITER",506.0,1.0,0.18599537037037037,1.0,9.0,6.0,8.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d907a098564b9afc4407cd15a2194e4531007452,Josh Durgin,1373902679,josh.durgin@inktank.com,Mon Jul 15 08:37:59 2013 -0700,"md full sync: skip sections that have no items (returning 404) Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""51af43bc04f2427320a81801c188f36e0316e931""]",1.0,1.0,1.0,0.0,3.0,0.0,"radosgw_agent/sync.py,CAS_DELIMITER",140.0,2.0,0.0333912037037037,1.0,8.0,6.5,7.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+0da8899209b57d98e7e195758c0ed580dab2bf09,Josh Durgin,1373899794,josh.durgin@inktank.com,Mon Jul 15 07:49:54 2013 -0700,"rewrite metadata sync Include full and partial metadata sync, but don't worry about tags and
+versions. Full and partial sync still have a bit of duplication
+that could be factored out.
+
+Save state to disk so partial syncs can know what's already been
+synced.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""17a0fde308619456d49fd216d3c9b481a7ce0c2e"", ""2cc0254db8dbb9ee1b624ff4114f826fb2ae31a0"", ""d693e6792dc74a2240ba5406417148e16bf1920d"", ""2521cc49345c4c76adac0e339265dcb40b3ebeb2"", ""6e5ae454a7d0390034b75fa4a8f86e2e9ffbf4a8"", ""a8834b7a53d5fc10127d7a61f406977ebbab5916"", ""7a8012da2de20fe2c54cfd6016199620fc159dd8""]",1.0,1.0,5.0,1.8373188062628492,312.0,1009.0,"radosgw_agent/REST_metadata_syncher.py,CAS_DELIMITER,radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",337.0,3.0,4.190974537037038,3.0,7.0,6.5,6.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+5327ff9037d55b4f49f188b41ccba22686030ccf,Josh Durgin,1373662637,josh.durgin@inktank.com,Fri Jul 12 13:57:17 2013 -0700,aoeu ,False,None,False,True,"[""2521cc49345c4c76adac0e339265dcb40b3ebeb2"", ""51af43bc04f2427320a81801c188f36e0316e931""]",1.0,1.0,3.0,1.036242459530096,347.0,223.0,"radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",254.66666666666666,2.0,3.352735339506173,3.0,6.0,5.5,5.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+4e0df5daf0db3bb64d4c1390a6688a3b7f72a7cd,Yehuda Sadeh,1373407240,yehuda@inktank.com,Tue Jul 9 15:00:40 2013 -0700,"another fix Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",116.0,2.0,0.04494212962962963,1.0,4.0,4.0,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+96380aed7683c415332c1a292b9fe3a2b8654124,Yehuda Sadeh,1373404448,yehuda@inktank.com,Tue Jul 9 14:14:08 2013 -0700,"use src / dest port numbers Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",False,None,False,False,,1.0,1.0,2.0,0.9182958340544896,3.0,0.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER",99.5,2.0,0.020515046296296295,2.0,3.0,3.0,2.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+8acb15b1a079ee873a3a0292cc05d3f25e8cde4e,Yehuda Sadeh,1373403383,yehuda@inktank.com,Tue Jul 9 13:56:23 2013 -0700,"fix log interface Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,1.0,0.0,1.0,1.0,"radosgw_agent/sync.py,CAS_DELIMITER",86.0,2.0,0.016377314814814813,1.0,2.0,2.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+d27fff32c12ae6347806c44d13f5dd66c75d8080,Yehuda Sadeh,1373403357,yehuda@inktank.com,Tue Jul 9 13:55:57 2013 -0700,"don't pass data as None to request Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",False,None,False,False,,1.0,1.0,1.0,0.0,2.0,1.0,"radosgw_agent/client.py,CAS_DELIMITER",115.0,1.0,1.1129976851851853,1.0,1.0,1.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6a09695a6642edb6fd4b10a5c8e2452aba5d51d2,Yehuda Sadeh,1373401968,yehuda@inktank.com,Tue Jul 9 13:32:48 2013 -0700,"various trivial fixes Signed-off-by: Yehuda Sadeh <yehuda@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,2.0,0.7219280948873623,4.0,1.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER",98.0,1.0,1.0969212962962962,1.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+6c168fd06522f1b5a9a70e8100b527e7ac9b2819,Josh Durgin,1373307194,josh.durgin@inktank.com,Mon Jul 8 11:13:14 2013 -0700,"Fix errors found by pyflakes Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",True,Corrective,True,False,,1.0,1.0,4.0,0.3309018492803637,53.0,94.0,"radosgw_agent/cli.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",228.25,1.0,0.11494791666666666,3.0,5.0,5.0,4.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+373d4fee601ffc590f67d2b2ce5df5df2513957a,Josh Durgin,1373301087,josh.durgin@inktank.com,Mon Jul 8 09:31:27 2013 -0700,Initial commit ,False,Feature Addition,False,False,,1.0,1.0,2.0,0.3033748360864139,37.0,0.0,".gitignore,CAS_DELIMITER,README.md,CAS_DELIMITER",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+e395de9714356d653351e037fbd325d220bd1d85,Josh Durgin,1373299741,josh.durgin@inktank.com,Mon Jul 8 09:09:01 2013 -0700,"Remove extra api calls and ignore write entries Only complete entries mean the modification was actually
+finished. Applying writes is useless when we're going to overwrite
+them with a complete shortly. Don't skip ahead of the log and query
+the source rgw for more info - just keep following the entries from
+the log.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,None,False,True,"[""6c168fd06522f1b5a9a70e8100b527e7ac9b2819""]",1.0,1.0,1.0,0.0,10.0,190.0,"radosgw_agent/worker.py,CAS_DELIMITER",775.0,1.0,0.042025462962962966,1.0,4.0,3.0,3.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+1eb7773fa7183b7d58eae23be5b0d78400bb7f92,Josh Durgin,1373297089,josh.durgin@inktank.com,Mon Jul 8 08:24:49 2013 -0700,"Add a basic command line wrapper and python packaging Dependency versions still need to be figure out more exactly.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Feature Addition,False,True,"[""6c168fd06522f1b5a9a70e8100b527e7ac9b2819"", ""6a09695a6642edb6fd4b10a5c8e2452aba5d51d2""]",2.0,2.0,8.0,1.9151918384758502,213.0,2.0,"LICENSE,CAS_DELIMITER,README.md,CAS_DELIMITER,README.rst,CAS_DELIMITER,bootstrap,CAS_DELIMITER,radosgw_agent/__init__.py,CAS_DELIMITER,radosgw_agent/cli.py,CAS_DELIMITER,requirements.txt,CAS_DELIMITER,setup.py,CAS_DELIMITER",0.25,1.0,1.4467592592592592e-06,1.0,3.0,2.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+b100e76938f042021eba8771a33060c0b192d624,Josh Durgin,1373296110,josh.durgin@inktank.com,Mon Jul 8 08:08:30 2013 -0700,"Refactor and simplify a little Make metadata and data workers share code, and combine and simplify
+the api calls a bit
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Perfective,False,True,"[""6c168fd06522f1b5a9a70e8100b527e7ac9b2819"", ""8acb15b1a079ee873a3a0292cc05d3f25e8cde4e"", ""4e0df5daf0db3bb64d4c1390a6688a3b7f72a7cd"", ""2521cc49345c4c76adac0e339265dcb40b3ebeb2""]",1.0,1.0,5.0,1.528727350490366,883.0,530.0,"radosgw_agent/REST_data_syncer.py,CAS_DELIMITER,radosgw_agent/REST_metadata_syncher.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER,radosgw_agent/sync.py,CAS_DELIMITER,radosgw_agent/worker.py,CAS_DELIMITER",262.0,2.0,3.4534606481481482,2.0,2.0,1.0,1.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+ab224ce58c54302f261b84f6b0dc4f7520114098,Josh Durgin,1372801025,josh.durgin@inktank.com,Tue Jul 2 14:37:05 2013 -0700,"Rename and simplify radogw client No methods depended on state unique to an instance, so move them out
+of a class. Make constants all caps and prepend internal functions
+with underscores.
+
+Signed-off-by: Josh Durgin <josh.durgin@inktank.com>
+",False,Perfective,False,True,"[""6c168fd06522f1b5a9a70e8100b527e7ac9b2819""]",1.0,1.0,2.0,0.9951480956540031,140.0,165.0,"radosgw_agent/RGW_REST_factory.py,CAS_DELIMITER,radosgw_agent/client.py,CAS_DELIMITER",82.5,1.0,0.019212962962962963,1.0,1.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
+2dce00af9f0893b36fbaabf573887038dbdc06c4,Joe Buck,1372797705,jbbuck@gmail.com,Tue Jul 2 13:41:45 2013 -0700,Initial import of wip ,False,Feature Addition,False,True,"[""6c168fd06522f1b5a9a70e8100b527e7ac9b2819"", ""17a0fde308619456d49fd216d3c9b481a7ce0c2e""]",1.0,1.0,3.0,1.393113810515703,1335.0,0.0,"radosgw_agent/REST_data_syncer.py,CAS_DELIMITER,radosgw_agent/REST_metadata_syncher.py,CAS_DELIMITER,radosgw_agent/RGW_REST_factory.py,CAS_DELIMITER",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5c57863f-9858-4dd2-aff0-0e72913a3c27,,,
