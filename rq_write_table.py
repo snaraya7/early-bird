@@ -1,6 +1,5 @@
 
-from sk_generator import *
-
+import pandas as pd
 import os
 
 """
@@ -63,10 +62,10 @@ def getMetricMedian(metric, policy):
 
         if  rankValues[0] >=  df['rank'].max() - EXTRA    and metric in ['roc_auc', 'recall' , 'g-score', 'mcc', 'precision']:
             print('\t returning 1' )
-            return '\hil '+str(mv) + iqr_str, 1
+            return ' '+str(mv) + iqr_str, 1
         elif rankValues[0] <=  df['rank'].min() + EXTRA     and metric in ['pf', 'd2h' , 'brier', 'ifa']:
             print('\t returning 2')
-            return '\hil ' + str(mv) + iqr_str, 1
+            return ' ' + str(mv) + iqr_str, 1
         else:
             print('\t returning 3')
             return  str(mv) + iqr_str , 0
@@ -103,7 +102,7 @@ def readable(selRule):
         # return "\\all "+selRule
         return selRule
     elif '150:25:25' in selRule:
-        # return "\\early "+selRule
+        # return "\ "+selRule
         return  selRule.replace('150:25:25', 'EARLY')
     else:
         return selRule
@@ -179,7 +178,7 @@ def decorate(policy):
         if not added:
 
             if p.startswith('E'):
-                decorated_policies.append('\early ' + p)
+                decorated_policies.append(' ' + p)
             elif p.startswith('T'):
                 decorated_policies.append('\\tca ' + p)
             elif p.startswith('B'):
@@ -191,7 +190,7 @@ def decorate(policy):
 
 
         # if p == 'E':
-        #     decorated_policies.append('\early E')
+        #     decorated_policies.append(' E')
         # elif p.startswith('E:B:'):
         #     decorated_policies.append('\ebell '+p)
         # elif p.startswith('B'):
@@ -316,20 +315,8 @@ def writeLatexCSVTable(sortedMap):
 
     print(df)
 
-    distinctClassifiers = list(set(classifiers))
-    aggregatedSum = []
+    print("Please view results csv at :", prefix + 'zlatex_table1.csv' )
 
-    for dc in distinctClassifiers:
-        aggregatedSum.append(df[df['Classifier'] == dc]['Wins'].sum())
-
-    df2 = pd.DataFrame()
-    df2['Classifier'] = distinctClassifiers
-    df2['Aggregated Wins'] = aggregatedSum
-
-    df2 = df2.sort_values('Aggregated Wins')
-    df2.to_csv(prefix+'zlatex_table2.csv', index=False)
-
-    os.startfile('C:\\Users\\ncshr\PycharmProjects\locality\\results\sk\zlatex_table1.csv')
 
 
 
@@ -372,4 +359,3 @@ if __name__ == '__main__':
 
     print("All measures")
     masterOfALLMeasures()
-    print('*** Considering top/bottom ',EXTRA, "ranks.")

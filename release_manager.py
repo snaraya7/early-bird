@@ -582,7 +582,7 @@ def getReleases(p):
 
     if p not in TSE_SZZ_PROJECTS:
         df = df[ df['classification'] != 'Merge' ]
-        print("Ignored ", len(df), " merge commits! ", before)
+        # print("Ignored ", len(df), " merge commits! ", before)
 
 
     releaseObjects = []
@@ -970,12 +970,7 @@ def latexAboutProjects():
     print(totalCommits, totalReleases, minTime, maxTime)
 
 
-def copyProjects():
-    from shutil import copyfile
 
-    for p in getProjectNames():
-        copyfile('./pngs/release_info/'+p+'.csv', 'C:/Users/ncshr/PycharmProjects/EarlyDefectPrediction/data/release_info/'+p+'.csv')
-        print("copied ",p)
 
 def analyze(minBug, minClean):
 

@@ -1126,13 +1126,6 @@ def getStr(proof=False):
                     year) + '.csv & ')
 
 
-def testFilterDF():
-
-    df = pd.read_csv('C:\\Users\\ncshr\\PycharmProjects\\locality\\results\\a_rq4\\project_ActionBarSherlock_results.csv')
-
-    x, y = getRQ4()
-
-    filterDF(df, x)
 
 
 def clean():
@@ -1159,9 +1152,9 @@ def learnerSamplingMap():
         df = pd.read_csv('./results/project_'+TSE_SZZ_PROJECTS[0]+'_results.csv')
     else:
         try:
-            df = pd.read_csv('./results/project_ActionBarSherlock_results.csv')
+            df = pd.read_csv('./'+RESULTS_FOLDER+'/project_ActionBarSherlock_results.csv')
         except Exception as e:
-            df = pd.read_csv('./results/project_server_results.csv')
+            df = pd.read_csv('./'+ RESULTS_FOLDER+'/project_server_results.csv')
 
 
     classifiers = df['classifier'].unique()
@@ -1261,7 +1254,18 @@ def cross_check():
 
 def move_results():
 
-    shutil.copytree(RESULTS_FOLDER, './results/')
+    try:
+        sk_results_folder = 'results'
+        for root, all_directories, files in os.walk(RESULTS_FOLDER):
+            for csv_file in files:
+                if csv_file.endswith('.csv'):
+                    shutil.copy(os.path.join(root, csv_file), sk_results_folder)
+                    print("Moved ",csv_file, " to ", sk_results_folder)
+
+    except Exception as e:
+        print("Error: ",e)
+
+
 
 
 if __name__ == '__main__':

@@ -3215,9 +3215,7 @@ def run_table_3_4(projectName):
 
 def test_all_releases(projectName):
 
-    # tca_plus.run(projectName, BELLWETHER_PROJECT)
 
-    # run_all_pairs(projectName)
 
     if not resultExists(projectName):
 
@@ -3308,8 +3306,9 @@ def test_all_releases(projectName):
 
 
         except Exception as e:
+            print("Error processing ", projectName, ' for RQ = ', RQ, e)
             traceback.print_exc()
-            print("Error processing ",projectName, e)
+
 
 
 
@@ -3509,32 +3508,13 @@ def run_early_bellwether_2(projectName):
 
 
 
-def run(chunk_index):
+def run():
 
     print("Writing in ", getFileName('<p>'), ' change in two places')
 
     procs = []
 
-    if 'Windows'   in platform.system():
-        projectNames =   [LOCAL_PROJECT]
-    else:
-        l = getProjectNames()
-        n = 12
-
-        # l = [ 'home-assistant', 'metasploit-framework' ]
-        # n = 1
-        x = [l[i:i + n] for i in range(0, len(l), n)]
-
-        try:
-            projectNames = x[chunk_index]
-        except Exception as e:
-            print("No projects ",chunk_index, e)
-            return
-
-        print("Processing chunk = ", chunk_index, projectNames)
-        # projectNames = getProjectNames()
-
-    for name in projectNames:
+    for name in getProjectNames():
         proc = Process(target=test_all_releases, args=(name,))
         procs.append(proc)
         proc.start()
@@ -3783,42 +3763,6 @@ def test_TLELClassifier():
 
 if __name__ == "__main__":
 
-    # lista = [x for x in range(0, 100)]
-    # i = 25 * max(lista) / 100
-    # j = 75 * max(lista) / 100
-    #
-    # print([i < x <= j for x in lista])
-
-    print(RESULTS_FOLDER, getClassifiers())
-
-    if 'Windows'   in platform.system():
-        run(None)
-    else:
-        run(int(sys.argv[1]))
-
-
-
-    # country_codes = getCountryCodes()
-    # country_codes = country_codes[1:]
-    # sno = len(country_codes) * (len(country_codes) - 1)
-    #
-    # for c in country_codes:
-    #     content_from_all_countries(c)
-    #     print(c, len(country_content_map[c]))
-    #
-    # analyze_countries()
-
-    # run_pts(int(sys.argv[1]))
-    # run_pts(1)
-
-
-
-
-
-
-
-
-
-
-
+    print("Result csv's will be generated at : ",RESULTS_FOLDER, ' folder!')
+    run()
 
