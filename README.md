@@ -22,7 +22,7 @@
 1. `Manually change RQ = 1 in Constants.py`
 1. `python3 rq_run.py` (Estimated time ~24hr on a multi-core machine. The script write many csv files (one per project) having results of classifiers tested on project releases)
 1. `python3 rq_export_scores.py` (Estimated time few min. Moves the current RQ results to 'results' folder and then this script aggregates all the evaluation scores from all the projects and writes it to eight separate text file (policy + learner pair)) in to the results/sk folder. 
-1. `sk_all.bat` (windows batch file) (Estimated time 10 to 15 min. Ranks all the evaluation scores using the Scott-Knott test to produce multiple csv files under results/sk folder.
+1. `sk_all.bat` (windows batch file, requires python 2) (Estimated time 10 to 15 min. Ranks all the evaluation scores using the Scott-Knott test to produce multiple csv files under results/sk folder.
 1. `rq_write_table.py` (Estimated time few sec. Writes the final results table as per the RQ in the paper into a csv under results/sk folder).
 
 The above steps can be repeated for remaining RQ's 2 to 4.
