@@ -1,4 +1,4 @@
-# [Paper: Assessing the  Early Bird Heuristic (for Predicting Project Quality)](TBD)
+# [Paper: Assessing the  Early Bird Heuristic (for Predicting Project Quality)](https://arxiv.org/abs/2105.11082)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/The_Early_Bird..._%28165702619%29.jpg" width="250">
 
